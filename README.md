@@ -11,7 +11,7 @@ User and Developer Guides can be found below.
 The user guide is meant to provide brief information to the user about the game co-opeDown. For detailed information and explanation as to how the game works, proceed to the [Developer Guide](https://github.com/marcuslim835/co-opeDown#developer-guide "For developers who are interested in our implementation") below.
 
 ### 1.1.1 Installing the Game
-For Windows Users: Download the "Windows" folder and run co-opeDown.exe to play the demo.
+For Windows Users: Download the "Windows" folder and run co-opeDown.exe to play the demo. <br>
 For Mac Users: ???
 
 ### 1.1.2 Player Controls
@@ -19,10 +19,10 @@ Player 1 Controls: WAD for movement, S to shoot <br>
 Player 2 Controls: Arrow Keys (except Down Arrow) for movement, Down Arrow to shoot
 
 ### 1.1.3 Scoring Mechanics
-Scoring can differ by the different stages. The general rule of thumb is that a stage complete gives a base score of 100, in addition to points given for speed (calculated using the time remaining when the stage is cleared).
+Scoring can differ by the different stages. The general rule of thumb is that a stage complete gives a base score of 100, in addition to points given for speed (calculated using the time remaining when the stage is cleared). More details can be found in the [Developer Guide](https://github.com/marcuslim835/co-opeDown#developer-guide "For developers who are interested in our implementation").
 
 ### 1.1.4 Level Mechanics
-As the level increases, questions will progressively get harder. For example, in the case of 1.2.1, the numbers generated will increase from 20 in the first level to 60 in the final level.
+As the level increases, questions will progressively get harder. For example, in the case of 1.2.1, the numbers generated will increase from 20 in the first level to 60 in the final level. More details can be found in the [Developer Guide](https://github.com/marcuslim835/co-opeDown#developer-guide "For developers who are interested in our implementation").
 
 ## 1.2 Stages
 All stages have a timer on them. Players should clear the stage before the timer expires to be able to get the score associated with clearing the stage.
@@ -48,7 +48,7 @@ In the example provided, moving the rooster and hen to the platform for "12" and
 The developer guide is meant to provide detailed information and explaination into how the game co-opeDown works. For a brief guide, proceed to the [User Guide](https://github.com/marcuslim835/co-opeDown#user-guide "For normal users") above.
 
 ### 1.1.1 Installing the Game
-For Windows Users: Download the "Windows" folder and run co-opeDown.exe to play the demo.
+For Windows Users: Download the "Windows" folder and run co-opeDown.exe to play the demo. <br>
 For Mac Users: ???
 
 ### 1.1.2 Player Controls
@@ -58,7 +58,7 @@ The rationale for using only four keys that are adjacent to each other is to fac
 
 ### 1.1.3 Scoring Mechanics
 Scoring can differ by the different stages. <br>
-Stage (where X is an integer) | Scoring for Stage Clear | Scoring for Stage Fail
+Stage (where X is the level) | Scoring for Stage Clear | Scoring for Stage Fail
 ------------ | ------------- | -------------
 X-1 | 100 + seconds remaining on the clock | 0
 X-2 | 100 + seconds remaining on the clock | 0
@@ -67,7 +67,7 @@ X-4 | 100 + seconds remaining on the clock | 0
 
 ### 1.1.4 Level Mechanics
 As the level increases, questions will progressively get harder. <br>
-Stage X-1 | Individual Platform Numbers Capped At
+Levels for Stage 1 | Individual Platform Numbers Capped At
 ------------ | -------------
 1-1 | 20
 2-1 | 30
@@ -75,7 +75,7 @@ Stage X-1 | Individual Platform Numbers Capped At
 4-1 | 50
 5-1 | 60
 
-Stage X-2 | Individual Numbers of [Equation](https://github.com/marcuslim835/co-opeDown#132-true-false-questions) Capped At
+Levels for Stage 2 | Individual Numbers of [Equation](https://github.com/marcuslim835/co-opeDown#132-true-false-questions) Capped At
 ------------ | -------------
 1-2 | 20
 2-2 | 30
@@ -83,7 +83,7 @@ Stage X-2 | Individual Numbers of [Equation](https://github.com/marcuslim835/co-
 4-2 | 50
 5-2 | 60
 
-Stage X-3 | Chance of Blue Flask Spawning
+Levels for Stage 3 | Chance of Blue Flask Spawning
 ------------ | -------------
 1-3 | 0
 2-3 | 0.2
@@ -91,7 +91,7 @@ Stage X-3 | Chance of Blue Flask Spawning
 4-3 | 0.6
 5-3 | 0.8
 
-Stage X-4 | Number of Buttons | Possibility of Repeated Numbers of the Same Sign | Numbers Capped At
+Levels for Stage 4 | Number of Buttons | Possibility of Repeated Numbers of the Same Sign | Numbers Capped At
 ------------ | ------------- | ------------- | -------------
 1-4 | 0 | No | 9
 2-4 | 0.2 | Yes | 9
@@ -120,30 +120,49 @@ Background | As the name suggests, the background picture of the scene.
 Tilemap | Used to place platforms, floor and position limits of the map.
 World Canvas | Used to display the relevant information tied to the world (eg. labels for tiles or buttons).
 Screen Canvas | Used to display the questions and counters related to the stage on the display for the player.
-GameController | Contains the scripts specific to each stage. To be discussed in [1.3.1](https://github.com/marcuslim835/co-opeDown#131-platform-questions).
+GameController | Contains the scripts specific to each stage. To be discussed in the following subsections.
 Player_1/2 | As mentioned in [1.2.3](https://github.com/marcuslim835/co-opeDown#123-player-object).
 GameObject | As mentioned in [1.2.2](https://github.com/marcuslim835/co-opeDown#122-the-dontdestroyonload-gameobject).
 
 ### 1.3.1 Platform Questions
-![image](https://user-images.githubusercontent.com/77620616/122510741-ab8fb500-d038-11eb-91f1-487ea0f0faac.png)
-The GameController for this scene contains a PlatformerGameLogic script, with the following inputs.
-PlatformerGameLogic Script | Description
+*Stage X-1 Questions are of this type.* <br>
+The GameController for this scene contains a PlatformerGameLogic script, with the following inputs. <br>
+PlatformerGameLogic Inputs | Description
 ------------ | -------------
 Player1 | Reference to Player_1
 Player2 | Reference to Player_2
 Text List | A list of text under World Canvas that serves to display a unique number with every platform.
 Sum | A text object under Screen Canvas that displays the sum needed for the player to clear the stage.
-Max Random | etc tbc
+Max Random Number | Maximum number that any platform's value can take on
+Min Random Number A | Minimum number that the first correct platform's value can take on
+Min Random Number B | Minimum number that the second correct platform's value can take on
+
+**Flow Chart** <br>
+1. Stage Initialization
+    1. 2 platforms are randomly chosen to be the ones with the correct answer. They are assigned with the tags "CorrectAnswerA" and "CorrectAnswerB".
+    2. Unique numbers are randomly generated for the 2 chosen platforms using `Max Random Number`, `Min Random Number A`, and `Min Random Number B`. The sum of the 2 numbers are assigned to the text object `Sum`.
+    3. Unique numbers that cannot be added together to give the correct sum are randomly generated for the remaining platforms using `Max Random Number` and `Min Random Number A`.
+2. Stage in Progress
+    1. Timer from ScoreTimeManager script is started.
+    2. Collision detection using the PlayerCollision script on the Player object to detect if the player is standing on the correct platforms (which in turn changes the values of `isCorrectA` or `isCorrectB` to true, depending on which platform it is standing on).
+3. Stage End
+    1. Players stands on the 2 chosen platforms (which is verified using the `isCorrectA` and `isCorrectB` booleans on the Player object) **OR** Timer runs down to 0 without solving the question.
+    2. Score is credited only if question is solved.
 
 ### 1.3.2 True False Questions
+*Stage X-2 Questions are of this type.* <br>
 
 ### 1.3.3 Catch the Object
+*Stage X-3 Tasks are of this type.* <br>
 
 ### 1.3.4 Button Shooting Questions
+*Stage X-4 Questions are of this type.* <br>
 
 ### 1.3.5 Knowing Each Other Questions
+*Stage X-5 Questions are of this type.* <br>
 
 ### 1.3.6 "Boss Fight"
+*Stage X-6 Tasks are of this type.* <br>
 
 # Credits
 Movement script is based on the one provided by Unity as part of their Standard Assets.
