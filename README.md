@@ -47,6 +47,9 @@ Standing on the wrong platform will result in a "level fail" (game continues wit
 In both examples provided, moving both the rooster and the hen to the platform labelled "False" would clear the level and earn points. Moving them to the platform labelled "True" would end the level and not earn points.
 
 ### 1.2.3 Catch the Object
+<img width="957" alt="3-3" src="https://user-images.githubusercontent.com/77620616/122638989-01905580-d12a-11eb-8bb5-10bcfb04a47e.png">
+Both chickens should try to collect the falling flasks by coming into contact with the flasks. <br>
+Blue coloured flasks are worth twice as much as normal flasks, but fall faster than normal flasks. <br>
 
 ### 1.2.4 Button Shooting Questions
 
@@ -69,11 +72,11 @@ The rationale for using only four keys that are adjacent to each other is to fac
 
 ### 1.1.3 Scoring Mechanics
 Scoring can differ by the different stages. <br>
-Stage (where X is the level) | Scoring for Stage Clear | Scoring for Stage Fail
+Stage (where X is the level) | Scoring for Stage Clear | Scoring for Stage Fail / Timeout
 ------------ | ------------- | -------------
 X-1 | 100 + seconds remaining on the clock | 0
 X-2 | 100 + seconds remaining on the clock | 0
-X-3 | 5 per normal flask, 10 per blue flask | Not Possible to Fail
+X-3 | 5 per normal flask, 10 per blue flask | 0
 X-4 | 100 + seconds remaining on the clock | 0
 
 ### 1.1.4 Level Mechanics
@@ -158,7 +161,7 @@ Max Random Number | Maximum number that any platform's value can take on
 Min Random Number A | Minimum number that the first correct platform's value can take on
 Min Random Number B | Minimum number that the second correct platform's value can take on
 
-**Flow Chart** <br>
+**Flow of Level** <br>
 1. Stage Initialization
     1. 2 platforms are randomly chosen to be the ones with the correct answer. They are assigned with the tags "CorrectAnswerA" and "CorrectAnswerB".
     2. Unique numbers are randomly generated for the 2 chosen platforms using `Max Random Number`, `Min Random Number A`, and `Min Random Number B`. The sum of the 2 numbers are assigned to the text object `Sum`.
@@ -183,10 +186,10 @@ False Platform | A reference to the platform representing the False option.
 Max Random Number | Maximum number that the equation question values can take on.
 Min Random Number | Minimum number that the equation question values can take on.
 
-**Flow Chart** <br>
+**Flow of Level** <br>
 1. Stage Initialization
     1. Answer to the question is randomized between True or False. The platform with the answer is assigned the tag "CorrectAnswerA" while the other is assigned the tag "CorrectAnswerB" (in other words, the tag "CorrectAnswerB" represents the incorrect platform).
-    2. Question type is randomly chosen between a statement question or a equation question.
+    2. Question type is randomly chosen between a statement question or an equation question.
     3. Should the question be a statement question, the question is drawn from either the "TrueQuestionBank" or the "FalseQuestionBank", depending on the answer to the question.
     4. Should the question be a equation question, two numbers are randomized using `Max Random Number` and `Min Random Number`. The two numbers will make up the equation to be displayed in the Question text object. If the answer is True, the sum displayed will be the sum of both numbers. If the answer is False, an offset number will be randomized between 1 to 4 and added to the total sum displayed (hence making the equation false).
 2. Stage in Progress
@@ -198,6 +201,29 @@ Min Random Number | Minimum number that the equation question values can take on
 
 ### 1.3.3 Catch the Object
 *Stage X-3 Tasks are of this type.* <br>
+The GameController for this scene contains a FallingStageGameLogic script, with the following inputs. <br>
+FallingStageGameLogic Inputs | Description
+------------ | -------------
+Player1 | Reference to Player_1
+Player2 | Reference to Player_2
+Slow Drop Object | A prefab of the normal flask.
+Fast Drop Object | A prefab of the blue flask.
+Chance of Fast | Probability at which a blue flask is instantiated.
+Spawn Gap | Amount of time gap between every flask instantiation.
+Score Display | A text object under Screen Canvas that displays the number of flasks caught.
+
+**Flow of Level** <br>
+1. Stage in Progress
+    1. Timer from ScoreTimeManager script is started.
+    2. A slow drop object or fast drop object is randomly chosen to be instantiatied based on the `Chance of Fast` variable.
+    3. The drop object is instantiated at a height of y=8 and a random x value that spans the length of the stage.
+    4. The drop object has a gravity scale of 1 to 1.5 for a fast drop object and 0.25 to 0.75 for a slow drop object, which is randomly determined by the DroppedObjectLogic script tagged to the drop objects.
+    5. Collision detection using the DroppedObjectLogic script on the prefab of the slow drop object and the fast drop object to detect if a player has collided with it.
+    6. If a player collides with the dropped object before it hits the ground, the dropped object is destroyed and the number of flasks caught increases by 1 if the flask is a slow drop object (normal flask) or by 2 if the flask is a fast drop object (blue flask).
+    7. If no player collides with the dropped object and it hits the ground, the dropped object is destroyed.
+2. Stage End
+    1. Timer runs down to 0.
+    2. The number of flasks caught is multiplied by 5 and credited to the total score.
 
 ### 1.3.4 Button Shooting Questions
 *Stage X-4 Questions are of this type.* <br>
