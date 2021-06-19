@@ -24,6 +24,9 @@ Scoring can differ by the different stages. The general rule of thumb is that a 
 ### 1.1.4 Level Mechanics
 As the level increases, questions will progressively get harder. For example, in the case of 1.2.1, the numbers generated will increase from 20 in the first level to 60 in the final level. More details can be found in the [Developer Guide](https://github.com/marcuslim835/co-opeDown#developer-guide "For developers who are interested in our implementation").
 
+### 1.1.5 User Interface
+<img width="757" alt="UIExplainer" src="https://user-images.githubusercontent.com/77620616/122631828-215f5380-d101-11eb-8c9c-31ddb6888d5d.png">
+
 ## 1.2 Stages
 All stages have a timer on them. Players should clear the stage before the timer expires to be able to get the score associated with clearing the stage.
 
@@ -98,6 +101,8 @@ Levels for Stage 4 | Number of Buttons | Possibility of Repeated Numbers of the 
 3-4 | 0.4 | No | 19
 4-4 | 0.6 | Yes | 19
 5-4 | 0.8 | No | 29
+
+### 1.1.5 User Interface
 
 ## 1.2 Game Design
 
