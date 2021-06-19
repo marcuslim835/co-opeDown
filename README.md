@@ -25,7 +25,9 @@ Scoring can differ by the different stages. The general rule of thumb is that a 
 As the level increases, questions will progressively get harder. For example, in the case of 1.2.1, the numbers generated will increase from 20 in the first level to 60 in the final level. More details can be found in the [Developer Guide](https://github.com/marcuslim835/co-opeDown#developer-guide "For developers who are interested in our implementation").
 
 ### 1.1.5 User Interface
-<img width="757" alt="UIExplainer" src="https://user-images.githubusercontent.com/77620616/122631828-215f5380-d101-11eb-8c9c-31ddb6888d5d.png">
+The following is a labelled screenshot of the user interface that every user will see in the game.
+<img width="756" alt="UIExplainer" src="https://user-images.githubusercontent.com/77620616/122636872-1ff05400-d11e-11eb-85e3-aa2ee7992f43.png">
+<img width="753" alt="OptionsMenu" src="https://user-images.githubusercontent.com/77620616/122636873-21218100-d11e-11eb-9f91-09d8b349a21a.png">
 
 ## 1.2 Stages
 All stages have a timer on them. Players should clear the stage before the timer expires to be able to get the score associated with clearing the stage.
@@ -102,19 +104,27 @@ Levels for Stage 4 | Number of Buttons | Possibility of Repeated Numbers of the 
 4-4 | 0.6 | Yes | 19
 5-4 | 0.8 | No | 29
 
-### 1.1.5 User Interface
-
 ## 1.2 Game Design
 
 ### 1.2.1 General Game Flow
 
 ### 1.2.2 The DontDestroyOnLoad GameObject
+The GameObject contains the User Interface for the game.
 Objects | Description
 ------------ | -------------
 DisplayUI | The UI for the player that includes the level, score, timer, and settings.
 OptionsMenu | The settings menu that is disabled by default and enabled when the settings button in DisplayUI is pressed.
 
+<img width="756" alt="UIExplainer" src="https://user-images.githubusercontent.com/77620616/122636872-1ff05400-d11e-11eb-85e3-aa2ee7992f43.png">
+<img width="753" alt="OptionsMenu" src="https://user-images.githubusercontent.com/77620616/122636873-21218100-d11e-11eb-9f91-09d8b349a21a.png">
+
+
 ### 1.2.3 Player Object
+Objects | Description
+------------ | -------------
+PlayerMovement | ???
+PlayerCollision | Used for collision detection in 1.3.1. Value of `isCorrectA` or `isCorrectB` changes to true if player is standing on platform with "CorrectAnswerA" or "CorrectAnswerB" tags respectively.
+Weapon | ???
 
 ## 1.3 Stages
 All stages have a timer on them. Players should clear the stage before the timer expires to be able to get the score associated with clearing the stage.
@@ -149,7 +159,7 @@ Min Random Number B | Minimum number that the second correct platform's value ca
     3. Unique numbers that cannot be added together to give the correct sum are randomly generated for the remaining platforms using `Max Random Number` and `Min Random Number A`.
 2. Stage in Progress
     1. Timer from ScoreTimeManager script is started.
-    2. Collision detection using the PlayerCollision script on the Player object to detect if the player is standing on the correct platforms (which in turn changes the values of `isCorrectA` or `isCorrectB` to true, depending on which platform it is standing on).
+    2. Collision detection using the PlayerCollision script on the [Player](https://github.com/marcuslim835/co-opeDown#123-player-object) object to detect if the player is standing on the correct platforms.
 3. Stage End
     1. Players stands on the 2 chosen platforms (which is verified using the `isCorrectA` and `isCorrectB` booleans on the Player object) **OR** Timer runs down to 0 without solving the question.
     2. Score is credited only if question is solved.
