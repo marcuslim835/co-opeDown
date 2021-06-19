@@ -39,6 +39,12 @@ Standing on the wrong platforms will not result in a "level fail". <br>
 In the example provided, moving the rooster and hen to the platform for "12" and "10" would clear the level.
 
 ### 1.2.2 True False Questions
+<img width="960" alt="1-2falsemath" src="https://user-images.githubusercontent.com/77620616/122638704-4915e200-d128-11eb-9bac-10eb51027681.png">
+<img width="958" alt="1-2falsestatement" src="https://user-images.githubusercontent.com/77620616/122638705-4a470f00-d128-11eb-96d2-4464c40a951c.png">
+Both chickens should be standing on the same platform that answers the question displayed in the middle. <br>
+Questions will either be in the form of a statement or an equation. <br>
+Standing on the wrong platform will result in a "level fail" (game continues with no score added). <br>
+In both examples provided, moving both the rooster and the hen to the platform labelled "False" would clear the level and earn points. Moving them to the platform labelled "True" would end the level and not earn points.
 
 ### 1.2.3 Catch the Object
 
@@ -123,14 +129,14 @@ OptionsMenu | The settings menu that is disabled by default and enabled when the
 Objects | Description
 ------------ | -------------
 PlayerMovement | ???
-PlayerCollision | Used for collision detection in 1.3.1. Value of `isCorrectA` or `isCorrectB` changes to true if player is standing on platform with "CorrectAnswerA" or "CorrectAnswerB" tags respectively.
+PlayerCollision | Used for collision detection in 1.3.1 and 1.3.2. Value of `isCorrectA` or `isCorrectB` changes to true if player is standing on platform with "CorrectAnswerA" or "CorrectAnswerB" tags respectively.
 Weapon | ???
 
 ## 1.3 Stages
 All stages have a timer on them. Players should clear the stage before the timer expires to be able to get the score associated with clearing the stage.
 Common Objects | Description
 ------------ | -------------
-Main Camera | Scenes with moving cameras contain a CameraTargets script that tracks the position (transform) of both player objects and adjusts the zoom to encompass both players within the camera view.
+Main Camera | Scenes with non-motionless cameras contain a CameraTargets script that tracks the position (transform) of both player objects and adjusts the camera view to encompass both players by adjusting the zoom level through the field of view.
 Background | As the name suggests, the background picture of the scene.
 Tilemap | Used to place platforms, floor and position limits of the map.
 World Canvas | Used to display the relevant information tied to the world (eg. labels for tiles or buttons).
@@ -161,11 +167,34 @@ Min Random Number B | Minimum number that the second correct platform's value ca
     1. Timer from ScoreTimeManager script is started.
     2. Collision detection using the PlayerCollision script on the [Player](https://github.com/marcuslim835/co-opeDown#123-player-object) object to detect if the player is standing on the correct platforms.
 3. Stage End
-    1. Players stands on the 2 chosen platforms (which is verified using the `isCorrectA` and `isCorrectB` booleans on the Player object) **OR** Timer runs down to 0 without solving the question.
+    1. Players stands on the 2 chosen platforms (which is verified using the `isCorrectA` and `isCorrectB` booleans on the Player object by the PlatformerGameLogic script) **OR** Timer runs down to 0 without solving the question.
     2. Score is credited only if question is solved.
 
 ### 1.3.2 True False Questions
 *Stage X-2 Questions are of this type.* <br>
+The GameController for this scene contains a TrueFalseGameLogic script, with the following inputs. <br>
+TrueFalseGameLogic Inputs | Description
+------------ | -------------
+Player1 | Reference to Player_1
+Player2 | Reference to Player_2
+Question | A text object under Screen Canvas that displays the question up for evaluation.
+True Platform | A reference to the platform representing the True option.
+False Platform | A reference to the platform representing the False option.
+Max Random Number | Maximum number that the equation question values can take on.
+Min Random Number | Minimum number that the equation question values can take on.
+
+**Flow Chart** <br>
+1. Stage Initialization
+    1. Answer to the question is randomized between True or False. The platform with the answer is assigned the tag "CorrectAnswerA" while the other is assigned the tag "CorrectAnswerB" (in other words, the tag "CorrectAnswerB" represents the incorrect platform).
+    2. Question type is randomly chosen between a statement question or a equation question.
+    3. Should the question be a statement question, the question is drawn from either the "TrueQuestionBank" or the "FalseQuestionBank", depending on the answer to the question.
+    4. Should the question be a equation question, two numbers are randomized using `Max Random Number` and `Min Random Number`. The two numbers will make up the equation to be displayed in the Question text object. If the answer is True, the sum displayed will be the sum of both numbers. If the answer is False, an offset number will be randomized between 1 to 4 and added to the total sum displayed (hence making the equation false).
+2. Stage in Progress
+    1. Timer from ScoreTimeManager script is started.
+    2. Collision detection using the PlayerCollision script on the [Player](https://github.com/marcuslim835/co-opeDown#123-player-object) object to detect which platform the player is standing on.
+3. Stage End
+    1. Both players stands on the same platform (which is verified using the `isCorrectA` and `isCorrectB` booleans on the Player object by the TrueFalseGameLogic script) **OR** Timer runs down to 0 without solving the question.
+    2. Score is credited only if question is solved.
 
 ### 1.3.3 Catch the Object
 *Stage X-3 Tasks are of this type.* <br>
