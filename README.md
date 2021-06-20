@@ -118,6 +118,8 @@ Levels for Stage 4 | Number of Buttons | Possibility of Repeated Numbers of the 
 ## 2.2 Game Design
 
 ### 2.2.1 General Game Flow
+![flow1](https://user-images.githubusercontent.com/77620616/122660850-3bf40400-d1b7-11eb-922b-5137b4869052.JPG)
+![flow2](https://user-images.githubusercontent.com/77620616/122660851-3d253100-d1b7-11eb-89c2-441494ad41b8.JPG)
 
 ### 2.2.2 The DontDestroyOnLoad GameObject
 The GameObject contains the User Interface for the game as well as scripts that are used across the entire game. This GameObject is never destroyed while the game is running and is passed from scene to scene.
