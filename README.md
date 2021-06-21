@@ -59,8 +59,14 @@ The chickens should shoot the buttons such that the current sum reaches the numb
 In the example provided, there are multiple solutions to the problem, one of which is shooting "+18" five times, "+13" once, and "-3" once.
 
 ### 1.2.5 Knowing Each Other Questions
+<img width="961" alt="Screenshot 2021-06-22 at 1 19 24 AM" src="https://user-images.githubusercontent.com/77206005/122802556-115d9480-d2f8-11eb-84b5-bb6a3a6d3d92.png">
+The players have to answer the questions to the best of their abilities by trying to choose the same answer best suited as per question suggested. <br>
+In the example provided, they have to choose one of the three options that best suit the question within the 5 seconds time limit.
 
 ### 1.2.6 "Boss Fight"
+<img width="960" alt="Screenshot 2021-06-22 at 1 25 39 AM" src="https://user-images.githubusercontent.com/77206005/122803155-d0b24b00-d2f8-11eb-886f-ce447c2a7765.png">
+The chickens have to shoot the bats before the bats come into contact with them, decreasing their HP. <br>
+The chickens will shoot jabs at the bats and increase scores, while avoiding death from insufficient HP.
 
 # 2 Developer Guide
 ## 2.1 Overview
@@ -68,7 +74,7 @@ The developer guide is meant to provide detailed information and explaination in
 
 ### 2.1.1 Installing the Game
 For Windows Users: Download the "Windows" folder and run co-opeDown.exe to play the demo. <br>
-For Mac Users: ???
+For Mac Users: Download the "MacOS" folder and run the co-opeDown app immediately. 
 
 ### 2.1.2 Player Controls
 Player 1 Controls: WAD for movement, S to shoot <br>
@@ -120,13 +126,22 @@ Levels for Stage 4 | Number of Buttons | Possibility of Repeated Numbers of the 
 4-4 | 0.6 | Yes | 19
 5-4 | 0.8 | No | 29
 
-Levels for Final Stage | Number of Hits Before Player Dies | Spawn Rate
------------- | ------------- | -------------
-1-F | 20 | ?
-2-F | 17 | ?
-3-F | 14 | ?
-4-F | 11 | ?
-5-F | 8 | ?
+Levels for Stage 5 | Number of Questions 
+------------ | ------------- 
+1-F | 5
+2-F | 5
+3-F | 5
+4-F | 5
+5-F | 5
+
+Levels for Final Stage | Number of Bats | Number of hits before death for each player | Enemy spawn rate
+------------ | ------------- | ------------- | -------------
+1-4 | 40 | 20 | 4
+2-4 | 40 | 17 | 3
+3-4 | 40 | 14 | 2
+4-4 | 40 | 11 | 1.7
+5-4 | 40 | 9 | 1.5
+
 
 ## 2.2 Game Design
 
@@ -151,9 +166,9 @@ OptionsMenu | Script that provides functionality to the OptionsMenuUI.
 ### 2.2.3 Player Object
 Objects | Description
 ------------ | -------------
-PlayerMovement | ???
+PlayerMovement | Used to give players ability to move left, right and jump up.
 PlayerCollision | Used for collision detection in 2.3.1 and 2.3.2. Value of `isCorrectA` or `isCorrectB` changes to true if player is standing on platform with "CorrectAnswerA" or "CorrectAnswerB" tags respectively.
-Weapon | ???
+Weapon | Used to kill enemys (bats) and press buttons when the weapon is executed by the player towards the direction it is facing. 
 
 ## 2.3 Stages
 All stages have a timer on them. Players should clear the stage before the timer expires to be able to get the score associated with clearing the stage.
@@ -277,9 +292,68 @@ Num Value | A text object under World Canvas that displays the value of the butt
 
 ### 2.3.5 Knowing Each Other Questions
 *Stage X-5 Questions are of this type.* <br>
+The GameController for this scene contains a TrivialQuestionsStage# script, while all the buttons (left, down, right) in the scene correlates with the 3 options present in the scenes to choose from. <br>
+TrivialQuestionsStage# Inputs | Description
+------------ | -------------
+Question | A text object under Screen Canvas that displays the generated question from the question bank.
+Platform A | A text object under Screen Canvas that displays the first option related to the question in Question.
+Platform B | A text object under Screen Canvas that displays the second option related to the question in Question.
+Platform C | A text object under Screen Canvas that displays the third option related to the question in Question.
+Sum | A text object under Screen Canvas that displays the number of questions correctly answered.
+Timer | A text object under Screen Canvas that displays countdown for the question to be answered by.
+Total Number Of Questions Asked | A text object under Screen Canvas that displays the number of questions answered thus far.
+
+**Flow of Level** <br>
+1. Stage Initialization
+    1. A question is generated randomly from the question bank and the 3 options are populated in the scene, ready to be answered.
+2. Stage in Progress
+    1. Timer from ScoreTimeManager script is started.
+    2. Key detection using the standard key input on the buttons to see if each player has placed their answer.
+    3. If a button key is pressed by each player, the timer will stop, the script will detect if they chose the same answer.
+    4. If they chose the same answer within the time limit, they get a point, else if the chose different answers they do not get a point.
+    5. If they exceed the time limit for that question, they will not get a point. The next question will be generated randomly.
+    6. Questions asked before will not be asked again to prevent repeatedness.
+3. Stage End
+    1. All questions were answered **OR** Timer runs down to 0 on the last question.
+    2. Score is credited to the number of questions answered correctly.
+
 
 ### 2.3.6 "Boss Fight"
 *Stage X-6 Tasks are of this type.* <br>
+The GameController for this scene contains a PlatformGameLogicBoss script, while all the interactions in the scene each contains a PlayerHealth and EnemySpawner scripts, with the following inputs. <br>
+PlatformGameLogicBoss Inputs | Description
+------------ | -------------
+Player1 | Reference to Player_1
+Player2 | Reference to Player_2
+Sum | A text object under Screen Canvas that displays the number of enemies killed.
+Is Complete | A boolean that indicates whether the all bats are killed or time is up.
+OnePlayerDied | A boolean that indicates whether one of the player died from insufficient health.
+TwoPlayersDied | A boolean that indicates true when two players died from insufficient health.
+
+PlayerHealth Inputs | Description
+------------ | -------------
+Max Health | Maximum health for the player.
+Current Health | Current health of the player throughout the gameplay in the scene.
+Health Bar |Reference to the health object of the player, displaying the hp below the player.
+
+EnemySpawner Inputs | Description
+------------ | -------------
+Enemy | Reference to the enmey object to follow players.
+Spawn Rate | Number of enemy objects released per second.
+Number Of Monsters | Count of number of enemies released so far.
+
+**Flow of Level** <br>
+1. Stage Initialization
+    1. Timer from ScoreTimeManager script is started.
+2. Stage in Progress
+    1. Enemies are relased as per spawn rate and uses an AI script to track the location of the players.
+    2. Players will move to dodge the enemy.
+    3. They can shoot jabs into the enemies to kill them, increasing their score (counting number of enemies killed).
+    4. If they fail to dodge and kill enemies before they collide, their health decrease.
+    5. If they have no more health, they die while game continues as long as there is a surviving player.
+3. Stage End
+    1. All enemies killed **OR** Both players died **OR** Timer runs down to 0.
+    2. Score is credited to the number of enemies killed answered correctly.
 
 # 3 Credits
 We would like to thank Lanturnip, ScheduleNeuron, tOThEmOoN, and our advisor Gerald for providing helpful evaluations of our project.
