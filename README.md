@@ -115,6 +115,14 @@ Levels for Stage 4 | Number of Buttons | Possibility of Repeated Numbers of the 
 4-4 | 0.6 | Yes | 19
 5-4 | 0.8 | No | 29
 
+Levels for Final Stage | Number of Hits Before Player Dies | Spawn Rate
+------------ | ------------- | -------------
+1-F | 20 | ?
+2-F | 17 | ?
+3-F | 14 | ?
+4-F | 11 | ?
+5-F | 8 | ?
+
 ## 2.2 Game Design
 
 ### 2.2.1 General Game Flow
