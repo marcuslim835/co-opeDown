@@ -1,9 +1,12 @@
 # co-opeDown
 Orbital 2021 <br>
+Developed using Unity 2020.3.7f1 <br>
 
-[User Guide](https://github.com/marcuslim835/co-opeDown#1-user-guide "For normal users")
+[1. User Guide](https://github.com/marcuslim835/co-opeDown#1-user-guide "For Everyone")
 
-[Developer Guide](https://github.com/marcuslim835/co-opeDown#2-developer-guide "For developers who are interested in our implementation")
+[2. Developer Guide](https://github.com/marcuslim835/co-opeDown#2-developer-guide "For developers who are interested in our implementation")
+
+[3. Credits](https://github.com/marcuslim835/co-opeDown#3-credits "Many Thanks!")
 
 # 1 User Guide
 ## 1.1 Overview
@@ -61,7 +64,7 @@ In the example provided, there are multiple solutions to the problem, one of whi
 
 # 2 Developer Guide
 ## 2.1 Overview
-The developer guide is meant to provide detailed information and explaination into how the game co-opeDown works. For a brief guide, proceed to the [User Guide](https://github.com/marcuslim835/co-opeDown#1-user-guide "For normal users") above.
+The developer guide is meant to provide detailed information and explaination into how the game co-opeDown works. For a brief guide, proceed to the [User Guide](https://github.com/marcuslim835/co-opeDown#1-user-guide "For Everyone") above.
 
 ### 2.1.1 Installing the Game
 For Windows Users: Download the "Windows" folder and run co-opeDown.exe to play the demo. <br>
@@ -70,7 +73,7 @@ For Mac Users: ???
 ### 2.1.2 Player Controls
 Player 1 Controls: WAD for movement, S to shoot <br>
 Player 2 Controls: Arrow Keys (except Down Arrow) for movement, Down Arrow to shoot <br>
-The rationale for using only four keys that are adjacent to each other is to facilitate the one-handed use of a single keyboard by two players to play the game.
+The rationale for using only four keys that are adjacent to each other is to facilitate the one-handed use of a single keyboard by two players to play the game, or for one person to control both characters simultaneously.
 
 ### 2.1.3 Scoring Mechanics
 Scoring can differ by the different stages. <br>
@@ -80,6 +83,8 @@ X-1 | 100 + seconds remaining on the clock | 0
 X-2 | 100 + seconds remaining on the clock | 0
 X-3 | 5 per normal flask, 10 per blue flask | 0
 X-4 | 100 + seconds remaining on the clock | 0
+X-5 | ??? | ?
+X-F | ??? | ?
 
 ### 2.1.4 Level Mechanics
 As the level increases, questions will progressively get harder. <br>
@@ -277,4 +282,39 @@ Num Value | A text object under World Canvas that displays the value of the butt
 *Stage X-6 Tasks are of this type.* <br>
 
 # 3 Credits
+We would like to thank Lanturnip, ScheduleNeuron, tOThEmOoN, and our advisor Gerald for providing helpful evaluations of our project.
+
 Movement script is based on the one provided by Unity as part of their Standard Assets.
+
+Corona by Alexander Nakarada | https://www.serpentsoundstudios.com <br>
+Music promoted by https://www.chosic.com/ <br>
+Attribution 4.0 International (CC BY 4.0) <br>
+https://creativecommons.org/licenses/by/4.0/
+
+Main Theme (Overture) | The Grand Score by Alexander Nakarada | https://www.serpentsoundstudios.com <br>
+Music promoted by https://www.chosic.com/ <br>
+Attribution 4.0 International (CC BY 4.0) <br>
+https://creativecommons.org/licenses/by/4.0/
+
+Adventure by Alexander Nakarada | https://www.serpentsoundstudios.com <br>
+Music promoted by https://www.chosic.com/ <br>
+Attribution 4.0 International (CC BY 4.0) <br>
+https://creativecommons.org/licenses/by/4.0/
+
+Brazilian Street Fight by Punch Deck | https://soundcloud.com/punch-deck <br>
+Music promoted by https://www.chosic.com <br>
+Creative Commons Attribution 3.0 Unported License <br>
+https://creativecommons.org/licenses/by/3.0/deed.en_US
+
+Fragile by Keys of Moon | https://soundcloud.com/keysofmoon <br>
+Attribution 4.0 International (CC BY 4.0) <br>
+https://creativecommons.org/licenses/by/4.0/ <br>
+Music promoted by https://www.chosic.com/
+
+White Petals by Keys of Moon | https://soundcloud.com/keysofmoon <br>
+Attribution 4.0 International (CC BY 4.0) <br>
+https://creativecommons.org/licenses/by/4.0/ <br>
+Music promoted by https://www.chosic.com/
+
+Other Music <br>
+Creative Commons Public License
