@@ -83,8 +83,8 @@ X-1 | 100 + seconds remaining on the clock | 0
 X-2 | 100 + seconds remaining on the clock | 0
 X-3 | 5 per normal flask, 10 per blue flask | 0
 X-4 | 100 + seconds remaining on the clock | 0
-X-5 | ??? | ?
-X-F | ??? | ?
+X-5 | 20 per correctly selected answers | 0
+X-F | 100 + (number of enemies killed) * 5 | 0
 
 ### 2.1.4 Level Mechanics
 As the level increases, questions will progressively get harder. <br>
