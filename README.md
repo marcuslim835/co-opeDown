@@ -128,19 +128,19 @@ Levels for Stage 4 | Number of Buttons | Possibility of Repeated Numbers of the 
 
 Levels for Stage 5 | Number of Questions 
 ------------ | ------------- 
-1-F | 5
-2-F | 5
-3-F | 5
-4-F | 5
-5-F | 5
+1-5 | 5
+2-5 | 5
+3-5 | 5
+4-5 | 5
+5-5 | 5
 
 Levels for Final Stage | Number of Bats | Number of hits before death for each player | Enemy spawn rate
 ------------ | ------------- | ------------- | -------------
-1-4 | 40 | 20 | 4
-2-4 | 40 | 17 | 3
-3-4 | 40 | 14 | 2
-4-4 | 40 | 11 | 1.7
-5-4 | 40 | 9 | 1.5
+1-F | 40 | 20 | 4
+2-F | 40 | 17 | 3
+3-F | 40 | 14 | 2
+4-F | 40 | 11 | 1.7
+5-F | 40 | 9 | 1.5
 
 
 ## 2.2 Game Design
