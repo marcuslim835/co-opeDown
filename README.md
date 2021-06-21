@@ -353,7 +353,7 @@ Number Of Monsters | Count of number of enemies released so far.
     5. If they have no more health, they die while game continues as long as there is a surviving player.
 3. Stage End
     1. All enemies killed **OR** Both players died **OR** Timer runs down to 0.
-    2. Score is credited to the number of enemies killed answered correctly.
+    2. Score is credited to the number of enemies killed.
 
 # 3 Credits
 We would like to thank Lanturnip, ScheduleNeuron, tOThEmOoN, and our advisor Gerald for providing helpful evaluations of our project.
