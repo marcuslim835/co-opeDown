@@ -1,5 +1,5 @@
 # co-opeDown
-Orbital 2021 <br>
+Orbital 2021 Apollo 11 Project <br>
 Developed using Unity 2020.3.7f1 <br>
 
 [1. User Guide](https://github.com/marcuslim835/co-opeDown#1-user-guide "For Everyone")
@@ -14,7 +14,7 @@ The user guide is meant to provide brief information to the user about the game 
 
 ### 1.1.1 Installing the Game
 For Windows Users: Download the "Windows" folder and run co-opeDown.exe to play the demo. <br>
-For Mac Users: ???
+For Mac Users: Download the "MacOS" folder and run the co-opeDown app to play the demo.
 
 ### 1.1.2 Player Controls
 Player 1 Controls: WAD for movement, S to shoot <br>
@@ -30,6 +30,9 @@ As the level increases, questions will progressively get harder. For example, in
 The following is a labelled screenshot of the user interface that every user will see in the game.
 <img width="756" alt="UIExplainer" src="https://user-images.githubusercontent.com/77620616/122636872-1ff05400-d11e-11eb-85e3-aa2ee7992f43.png">
 <img width="753" alt="OptionsMenu" src="https://user-images.githubusercontent.com/77620616/122636873-21218100-d11e-11eb-9f91-09d8b349a21a.png">
+
+### 1.1.6 Save/Load Mechanics
+The saving and loading system is currently not yet implemented and will be implemented by Milestone 3.
 
 ## 1.2 Stages
 All stages have a timer on them. Players should clear the stage before the timer expires to be able to get the score associated with clearing the stage.
@@ -60,13 +63,13 @@ In the example provided, there are multiple solutions to the problem, one of whi
 
 ### 1.2.5 Knowing Each Other Questions
 <img width="961" alt="Screenshot 2021-06-22 at 1 19 24 AM" src="https://user-images.githubusercontent.com/77206005/122802556-115d9480-d2f8-11eb-84b5-bb6a3a6d3d92.png">
-The players have to answer the questions to the best of their abilities by trying to choose the same answer best suited as per question suggested. <br>
+The players have to answer the questions by trying to choose the same answer that is most suited to the question given. <br>
 In the example provided, they have to choose one of the three options that best suit the question within the 5 seconds time limit.
 
 ### 1.2.6 "Boss Fight"
 <img width="960" alt="Screenshot 2021-06-22 at 1 25 39 AM" src="https://user-images.githubusercontent.com/77206005/122803155-d0b24b00-d2f8-11eb-886f-ce447c2a7765.png">
-The chickens have to shoot the bats before the bats come into contact with them, decreasing their HP. <br>
-The chickens will shoot jabs at the bats and increase scores, while avoiding death from insufficient HP.
+The chickens have to shoot the bats before the bats come into contact with them and decrease their HP. <br>
+Landing shots at the bats will increase the score, while avoiding death from insufficient HP.
 
 # 2 Developer Guide
 ## 2.1 Overview
@@ -74,7 +77,7 @@ The developer guide is meant to provide detailed information and explaination in
 
 ### 2.1.1 Installing the Game
 For Windows Users: Download the "Windows" folder and run co-opeDown.exe to play the demo. <br>
-For Mac Users: Download the "MacOS" folder and run the co-opeDown app immediately. 
+For Mac Users: Download the "MacOS" folder and run the co-opeDown app to play the demo. 
 
 ### 2.1.2 Player Controls
 Player 1 Controls: WAD for movement, S to shoot <br>
@@ -89,8 +92,8 @@ X-1 | 100 + seconds remaining on the clock | 0
 X-2 | 100 + seconds remaining on the clock | 0
 X-3 | 5 per normal flask, 10 per blue flask | 0
 X-4 | 100 + seconds remaining on the clock | 0
-X-5 | 20 per correctly selected answers | 0
-X-F | 100 + (number of enemies killed) * 5 | 0
+X-5 | 20 per identical answer | 0
+X-F | 100 + 5 per enemy killed | 0
 
 ### 2.1.4 Level Mechanics
 As the level increases, questions will progressively get harder. <br>
@@ -134,7 +137,7 @@ Levels for Stage 5 | Number of Questions
 4-5 | 5
 5-5 | 5
 
-Levels for Final Stage | Number of Bats | Number of hits before death for each player | Enemy spawn rate
+Levels for Final Stage | Number of Bats | Number of Hits before death for each player | Enemy Spawn Rate (per Enemy in Seconds)
 ------------ | ------------- | ------------- | -------------
 1-F | 40 | 20 | 4
 2-F | 40 | 17 | 3
@@ -142,6 +145,14 @@ Levels for Final Stage | Number of Bats | Number of hits before death for each p
 4-F | 40 | 11 | 1.7
 5-F | 40 | 9 | 1.5
 
+### 2.1.5 User Interface
+The following is a labelled screenshot of the user interface that every user will see in the game. <br>
+Our UI Design follows the general design of many platformer games already out in the market, with essential information at the top and the settings button on the top-right corner. This aims to provide a sense of familiarity to players who were already in contact with other games of the platformer genre prior to co-opeDown.
+<img width="756" alt="UIExplainer" src="https://user-images.githubusercontent.com/77620616/122636872-1ff05400-d11e-11eb-85e3-aa2ee7992f43.png">
+<img width="753" alt="OptionsMenu" src="https://user-images.githubusercontent.com/77620616/122636873-21218100-d11e-11eb-9f91-09d8b349a21a.png">
+
+### 2.1.6 Save/Load Mechanics
+The saving and loading system is currently not yet implemented and will be implemented by Milestone 3.
 
 ## 2.2 Game Design
 
@@ -292,8 +303,8 @@ Num Value | A text object under World Canvas that displays the value of the butt
 
 ### 2.3.5 Knowing Each Other Questions
 *Stage X-5 Questions are of this type.* <br>
-The GameController for this scene contains a TrivialQuestionsStage# script, while all the buttons (left, down, right) in the scene correlates with the 3 options present in the scenes to choose from. <br>
-TrivialQuestionsStage# Inputs | Description
+The GameController for this scene contains a TrivialQuestionsGameLogic script, while all the buttons (left, down, right) in the scene correlates with the 3 options present in the scenes to choose from. <br>
+TrivialQuestionsGameLogic Inputs | Description
 ------------ | -------------
 Question | A text object under Screen Canvas that displays the generated question from the question bank.
 Platform A | A text object under Screen Canvas that displays the first option related to the question in Question.
