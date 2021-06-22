@@ -175,9 +175,9 @@ OptionsMenu | Script that provides functionality to the OptionsMenuUI.
 ### 2.2.3 Player Object
 Objects | Description
 ------------ | -------------
-PlayerMovement | Used to give players ability to move left, right and jump up.
-PlayerCollision | Used for collision detection in 2.3.1 and 2.3.2. Value of `isCorrectA` or `isCorrectB` changes to true if player is standing on platform with "CorrectAnswerA" or "CorrectAnswerB" tags respectively.
-Weapon | Used to kill enemys (bats) and press buttons when the weapon is executed by the player towards the direction it is facing. 
+PlayerMovement | Script to give players ability to move left, right and jump up.
+PlayerCollision | Script for collision detection in 2.3.1 and 2.3.2. Value of `isCorrectA` or `isCorrectB` changes to true if player is standing on platform with "CorrectAnswerA" or "CorrectAnswerB" tags respectively.
+Weapon | Script used to eliminate enemies (bats) and trigger buttons when the weapon is triggered by the player towards the direction it is facing. 
 
 ## 2.3 Stages
 All stages have a timer on them. Players should clear the stage before the timer expires to be able to get the score associated with clearing the stage.
@@ -301,13 +301,13 @@ Num Value | A text object under World Canvas that displays the value of the butt
 
 ### 2.3.5 Knowing Each Other Questions
 *Stage X-5 Questions are of this type.* <br>
-The GameController for this scene contains a TrivialQuestionsGameLogic script, while all the buttons (left, down, right) in the scene correlates with the 3 options present in the scenes to choose from. <br>
+The GameController for this scene contains a TrivialQuestionsGameLogic script, while the buttons (left/A, down/S, right/D) in the scene correlates with the 3 options present in the scenes to choose from. <br>
 TrivialQuestionsGameLogic Inputs | Description
 ------------ | -------------
 Question | A text object under Screen Canvas that displays the generated question from the question bank.
-Platform A | A text object under Screen Canvas that displays the first option related to the question in Question.
-Platform B | A text object under Screen Canvas that displays the second option related to the question in Question.
-Platform C | A text object under Screen Canvas that displays the third option related to the question in Question.
+Platform A | A text object under Screen Canvas that displays the first option related to the question in `Question`.
+Platform B | A text object under Screen Canvas that displays the second option related to the question in `Question`.
+Platform C | A text object under Screen Canvas that displays the third option related to the question in `Question`.
 Sum | A text object under Screen Canvas that displays the number of questions correctly answered.
 Timer | A text object under Screen Canvas that displays countdown for the question to be answered by.
 Total Number Of Questions Asked | A text object under Screen Canvas that displays the number of questions answered thus far.
@@ -319,7 +319,7 @@ Total Number Of Questions Asked | A text object under Screen Canvas that display
     1. Timer from ScoreTimeManager script is started.
     2. Key detection using the standard key input on the buttons to see if each player has placed their answer.
     3. If a button key is pressed by each player, the timer will stop, the script will detect if they chose the same answer.
-    4. If they chose the same answer within the time limit, they get a point, else if the chose different answers they do not get a point.
+    4. If they chose the same answer within the time limit, they get a point, else they do not get a point.
     5. If they exceed the time limit for that question, they will not get a point. The next question will be generated randomly.
     6. Questions asked before will not be asked again to prevent repeatedness.
 3. Stage End
@@ -336,8 +336,8 @@ Player1 | Reference to Player_1
 Player2 | Reference to Player_2
 Sum | A text object under Screen Canvas that displays the number of enemies killed.
 Is Complete | A boolean that indicates whether the all bats are killed or time is up.
-OnePlayerDied | A boolean that indicates whether one of the player died from insufficient health.
-TwoPlayersDied | A boolean that indicates true when two players died from insufficient health.
+OnePlayerDied | A boolean that indicates whether one of the player dies from insufficient health.
+TwoPlayersDied | A boolean that indicates true when two players dies from insufficient health.
 
 PlayerHealth Inputs | Description
 ------------ | -------------
@@ -357,9 +357,9 @@ Number Of Monsters | Count of number of enemies released so far.
 2. Stage in Progress
     1. Enemies are relased as per spawn rate and uses an AI script to track the location of the players.
     2. Players will move to dodge the enemy.
-    3. They can shoot jabs into the enemies to kill them, increasing their score (counting number of enemies killed).
-    4. If they fail to dodge and kill enemies before they collide, their health decrease.
-    5. If they have no more health, they die while game continues as long as there is a surviving player.
+    3. They can shoot jabs at the enemies to kill them, increasing their score (counting number of enemies killed).
+    4. If they fail to kill enemies before they collide, their health decrease.
+    5. If a player has no more health, the player dies and the game will still continue as long as there is a surviving player.
 3. Stage End
     1. All enemies killed **OR** Both players died **OR** Timer runs down to 0.
     2. Score is credited to the number of enemies killed.
