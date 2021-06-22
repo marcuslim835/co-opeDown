@@ -147,7 +147,8 @@ Levels for Final Stage | Number of Bats | Number of Hits before death for each p
 
 ### 2.1.5 User Interface
 The following is a labelled screenshot of the user interface that every user will see in the game. <br>
-Our UI Design follows the general design of many platformer games already out in the market, with essential information at the top and the settings button on the top-right corner. This aims to provide a sense of familiarity to players who were already in contact with other games of the platformer genre prior to co-opeDown.
+Our UI Design follows the general design of many platformer games already out in the market, with essential information at the top and the settings button on the top-right corner. This aims to provide a sense of familiarity to players who were already in contact with other games of the platformer genre prior to co-opeDown. <br>
+The implementation of the UI can be found in Section [2.2.2](https://github.com/marcuslim835/co-opeDown#222-the-dontdestroyonload-gameobject).
 <img width="756" alt="UIExplainer" src="https://user-images.githubusercontent.com/77620616/122636872-1ff05400-d11e-11eb-85e3-aa2ee7992f43.png">
 <img width="753" alt="OptionsMenu" src="https://user-images.githubusercontent.com/77620616/122636873-21218100-d11e-11eb-9f91-09d8b349a21a.png">
 
@@ -170,9 +171,6 @@ NavigationOptions | Script for navigating between scenes that can be used by the
 AudioManager | Script for playing music that changes depending on the scene.
 ScoreTimeManager | Script for the score and timer in DisplayUI that can be used by the different scenes (stages).
 OptionsMenu | Script that provides functionality to the OptionsMenuUI.
-
-<img width="756" alt="UIExplainer" src="https://user-images.githubusercontent.com/77620616/122636872-1ff05400-d11e-11eb-85e3-aa2ee7992f43.png">
-<img width="753" alt="OptionsMenu" src="https://user-images.githubusercontent.com/77620616/122636873-21218100-d11e-11eb-9f91-09d8b349a21a.png">
 
 ### 2.2.3 Player Object
 Objects | Description
