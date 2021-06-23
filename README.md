@@ -12,8 +12,8 @@ Developed using Unity 2020.3.7f1 <br>
 ## 1.1 Overview
 The user guide is meant to provide brief information to the user about the game co-opeDown. For detailed information and explanation as to how the game works, proceed to the [Developer Guide](https://github.com/marcuslim835/co-opeDown#2-developer-guide "For developers who are interested in our implementation") below.
 
-### 1.1.1 Installing the Game
-CLick the green "Code" button and press "Download ZIP". <br>
+### 1.1.1 Setting up the Game
+Click the green "Code" button and press "Download ZIP" from [our GitHub](https://github.com/marcuslim835/co-opeDown). <br>
 Extract the files from the downloaded ZIP file. <br>
 For Windows Users: Open the "Windows" folder and run co-opeDown.exe to play the demo. <br>
 For Mac Users: Open the "MacOS" folder and run the co-opeDown app to play the demo.
@@ -77,8 +77,8 @@ Landing shots at the bats will increase the score, while avoiding death from ins
 ## 2.1 Overview
 The developer guide is meant to provide detailed information and explaination into how the game co-opeDown works. For a brief guide, proceed to the [User Guide](https://github.com/marcuslim835/co-opeDown#1-user-guide "For Everyone") above.
 
-### 2.1.1 Installing the Game
-CLick the green "Code" button and press "Download ZIP". <br>
+### 2.1.1 Setting up the Game
+Click the green "Code" button and press "Download ZIP" from [our GitHub](https://github.com/marcuslim835/co-opeDown). <br>
 Extract the files from the downloaded ZIP file. <br>
 For Windows Users: Open the "Windows" folder and run co-opeDown.exe to play the demo. <br>
 For Mac Users: Open the "MacOS" folder and run the co-opeDown app to play the demo.
