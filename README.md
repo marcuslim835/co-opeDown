@@ -13,8 +13,10 @@ Developed using Unity 2020.3.7f1 <br>
 The user guide is meant to provide brief information to the user about the game co-opeDown. For detailed information and explanation as to how the game works, proceed to the [Developer Guide](https://github.com/marcuslim835/co-opeDown#2-developer-guide "For developers who are interested in our implementation") below.
 
 ### 1.1.1 Installing the Game
-For Windows Users: Download the "Windows" folder and run co-opeDown.exe to play the demo. <br>
-For Mac Users: Download the "MacOS" folder and run the co-opeDown app to play the demo.
+CLick the green "Code" button and press "Download ZIP". <br>
+Extract the files from the downloaded ZIP file. <br>
+For Windows Users: Open the "Windows" folder and run co-opeDown.exe to play the demo. <br>
+For Mac Users: Open the "MacOS" folder and run the co-opeDown app to play the demo.
 
 ### 1.1.2 Player Controls
 Player 1 Controls: WAD for movement, S to shoot <br>
@@ -76,8 +78,10 @@ Landing shots at the bats will increase the score, while avoiding death from ins
 The developer guide is meant to provide detailed information and explaination into how the game co-opeDown works. For a brief guide, proceed to the [User Guide](https://github.com/marcuslim835/co-opeDown#1-user-guide "For Everyone") above.
 
 ### 2.1.1 Installing the Game
-For Windows Users: Download the "Windows" folder and run co-opeDown.exe to play the demo. <br>
-For Mac Users: Download the "MacOS" folder and run the co-opeDown app to play the demo. 
+CLick the green "Code" button and press "Download ZIP". <br>
+Extract the files from the downloaded ZIP file. <br>
+For Windows Users: Open the "Windows" folder and run co-opeDown.exe to play the demo. <br>
+For Mac Users: Open the "MacOS" folder and run the co-opeDown app to play the demo.
 
 ### 2.1.2 Player Controls
 Player 1 Controls: WAD for movement, S to shoot <br>
