@@ -1,12 +1,15 @@
 # co-opeDown
 Orbital 2021 Apollo 11 Project <br>
 Developed using Unity 2020.3.7f1 <br>
+[Project Video](https://drive.google.com/file/d/1sG1sSsElKX2x5TalWBKIrSE_wuQUK0Ur/view?usp=sharing)
 
 [1. User Guide](https://github.com/marcuslim835/co-opeDown#1-user-guide "For Everyone")
 
 [2. Developer Guide](https://github.com/marcuslim835/co-opeDown#2-developer-guide "For developers who are interested in our implementation")
 
 [3. Credits](https://github.com/marcuslim835/co-opeDown#3-credits "Many Thanks!")
+
+[4. Troubleshooting](https://github.com/marcuslim835/co-opeDown#4-troubleshooting "Commonly cited issues")
 
 # 1 User Guide
 ## 1.1 Overview
@@ -405,3 +408,10 @@ Music promoted by https://www.chosic.com/
 
 Other Music <br>
 Creative Commons Public License
+
+# 4 Troubleshooting
+**Some users may find that the game is not launched in a 16:9 aspect ratio and hence looks weirdly proportioned.** <br>
+For Windows users, locate the following registry key: HKEY_CURRENT_USER\SOFTWARE\co-opeDown\co-opeDown <br>
+Then, delete the entire key and relaunch the app. <br>
+The registry can be accessed by typing "regedit" into the search bar. <br>
+For Mac users, delete the corresponding preferences file located in ~/Library/Preferences/unity
