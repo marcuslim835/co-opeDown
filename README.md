@@ -1,6 +1,7 @@
 # co-opeDown
 Orbital 2021 Apollo 11 Project <br>
 Developed using Unity 2020.3.7f1 <br>
+[Project Poster](https://drive.google.com/file/d/1jx97fc7IDTosgmvtMr1OwiCqHEbdTbzZ/view?usp=sharing) <br>
 [Project Video](https://drive.google.com/file/d/1sG1sSsElKX2x5TalWBKIrSE_wuQUK0Ur/view?usp=sharing)
 
 [1. User Guide](https://github.com/marcuslim835/co-opeDown#1-user-guide "For Everyone")
