@@ -1,3 +1,7 @@
+# Contents
+-Work in Progress-
+User Guide + FAQs
+
 # 1 User Guide
 ## 1.1 Overview
 The user guide is meant to provide brief information to the user about the game co-opeDown. For detailed information and explanation as to how the game works, proceed to the [Developer Guide](https://github.com/marcuslim835/co-opeDown#2-developer-guide "For developers who are interested in our implementation") below.
@@ -63,4 +67,9 @@ In the example provided, they have to choose one of the three options that best 
 The chickens have to shoot the bats before the bats come into contact with them and decrease their HP. <br>
 Landing shots at the bats will increase the score, while avoiding death from insufficient HP.
 
-
+# Frequently Asked Questions
+**Some users may find that the game is not launched in a 16:9 aspect ratio and hence looks weirdly proportioned.** <br>
+For Windows users, locate the following registry key: HKEY_CURRENT_USER\SOFTWARE\co-opeDown\co-opeDown <br>
+Then, delete the entire key and relaunch the app. <br>
+The registry can be accessed by typing "regedit" into the search bar. <br>
+For Mac users, delete the corresponding preferences file located in ~/Library/Preferences/unity
