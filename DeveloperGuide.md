@@ -1,19 +1,19 @@
-# 2 Developer Guide
-## 2.1 Overview
+# Developer Guide
+## 1 Overview
 The developer guide is meant to provide detailed information and explaination into how the game co-opeDown works. For a brief guide, proceed to the [User Guide](https://github.com/marcuslim835/co-opeDown#1-user-guide "For Everyone") above.
 
-### 2.1.1 Setting up the Game
+### 1.1 Setting up the Game
 Click the green "Code" button and press "Download ZIP" from [our GitHub](https://github.com/marcuslim835/co-opeDown). <br>
 Extract the files from the downloaded ZIP file. <br>
 For Windows Users: Open the "Windows" folder and run co-opeDown.exe to play the demo. <br>
 For Mac Users: Open the "MacOS" folder and run the co-opeDown app to play the demo.
 
-### 2.1.2 Player Controls
+### 1.2 Player Controls
 Player 1 Controls: WAD for movement, S to shoot <br>
 Player 2 Controls: Arrow Keys (except Down Arrow) for movement, Down Arrow to shoot <br>
 The rationale for using only four keys that are adjacent to each other is to facilitate the one-handed use of a single keyboard by two players to play the game, or for one person to control both characters simultaneously.
 
-### 2.1.3 Scoring Mechanics
+### 1.3 Scoring Mechanics
 Scoring can differ by the different stages. <br>
 Stage (where X is the level) | Scoring for Stage Clear | Scoring for Stage Fail / Timeout
 ------------ | ------------- | -------------
@@ -24,7 +24,7 @@ X-4 | 100 + seconds remaining on the clock | 0
 X-5 | 20 per identical answer | 0
 X-F | 100 + 5 per enemy killed | 0
 
-### 2.1.4 Level Mechanics
+### 1.4 Difficulty Mechanics
 As the level increases, questions will progressively get harder. <br>
 Levels for Stage 1 | Individual Platform Numbers Capped At
 ------------ | -------------
@@ -74,23 +74,25 @@ Levels for Final Stage | Number of Bats | Number of Hits before death for each p
 4-F | 40 | 11 | 1.7
 5-F | 40 | 9 | 1.5
 
-### 2.1.5 User Interface
+### 1.5 User Interface
 The following is a labelled screenshot of the user interface that every user will see in the game. <br>
 Our UI Design follows the general design of many platformer games already out in the market, with essential information at the top and the settings button on the top-right corner. This aims to provide a sense of familiarity to players who were already in contact with other games of the platformer genre prior to co-opeDown. <br>
 The implementation of the UI can be found in Section [2.2.2](https://github.com/marcuslim835/co-opeDown#222-the-dontdestroyonload-gameobject).
 <img width="756" alt="UIExplainer" src="https://user-images.githubusercontent.com/77620616/122636872-1ff05400-d11e-11eb-85e3-aa2ee7992f43.png">
 <img width="753" alt="OptionsMenu" src="https://user-images.githubusercontent.com/77620616/122636873-21218100-d11e-11eb-9f91-09d8b349a21a.png">
 
-### 2.1.6 Save/Load Mechanics
+### 1.6 Save/Load Mechanics
 The saving and loading system is currently not yet implemented and will be implemented by Milestone 3.
 
-## 2.2 Game Design
+### 1.7 Highscores
 
-### 2.2.1 General Game Flow
+## 2 Game Design
+
+### 2.1 General Game Flow
 ![flow1](https://user-images.githubusercontent.com/77620616/122660850-3bf40400-d1b7-11eb-922b-5137b4869052.JPG)
 ![flow2](https://user-images.githubusercontent.com/77620616/122660851-3d253100-d1b7-11eb-89c2-441494ad41b8.JPG)
 
-### 2.2.2 The DontDestroyOnLoad GameObject
+### 2.2 The DontDestroyOnLoad GameObject
 The GameObject contains the User Interface for the game as well as scripts that are used across the entire game. This GameObject is never destroyed while the game is running and is passed from scene to scene.
 Objects | Description
 ------------ | -------------
@@ -101,15 +103,19 @@ AudioManager | Script for playing music that changes depending on the scene.
 ScoreTimeManager | Script for the score and timer in DisplayUI that can be used by the different scenes (stages).
 OptionsMenu | Script that provides functionality to the OptionsMenuUI.
 
-### 2.2.3 Player Object
+### 2.3 Player Object
 Objects | Description
 ------------ | -------------
 PlayerMovement | Script to give players ability to move left, right and jump up.
 PlayerCollision | Script for collision detection in 2.3.1 and 2.3.2. Value of `isCorrectA` or `isCorrectB` changes to true if player is standing on platform with "CorrectAnswerA" or "CorrectAnswerB" tags respectively.
 Weapon | Script used to eliminate enemies (bats) and trigger buttons when the weapon is triggered by the player towards the direction it is facing. 
 
-## 2.3 Stages
-All stages have a timer on them. Players should clear the stage before the timer expires to be able to get the score associated with clearing the stage.
+### 2.4 Transitions
+-WIP-
+
+## 3 Game Modes
+### 3.1 Classic Mode
+All classic mode stages have a timer on them. Players should clear the stage before the timer expires to be able to get the score associated with clearing the stage.
 Common Objects | Description
 ------------ | -------------
 Main Camera | Scenes with non-motionless cameras contain a CameraTargets script that tracks the position (transform) of both player objects and adjusts the camera view to encompass both players by adjusting the zoom level through the field of view.
@@ -121,7 +127,7 @@ GameController | Contains the scripts specific to each stage. To be discussed in
 Player_1/2 | As mentioned in [2.2.3](https://github.com/marcuslim835/co-opeDown#223-player-object).
 GameObject | As mentioned in [2.2.2](https://github.com/marcuslim835/co-opeDown#222-the-dontdestroyonload-gameobject).
 
-### 2.3.1 Platform Questions
+#### 3.1.1 Platform Questions
 *Stage X-1 Questions are of this type.* <br>
 The GameController for this scene contains a PlatformerGameLogic script, with the following inputs. <br>
 PlatformerGameLogic Inputs | Description
@@ -146,7 +152,7 @@ Min Random Number B | Minimum number that the second correct platform's value ca
     1. Players stands on the 2 chosen platforms (which is verified using the `isCorrectA` and `isCorrectB` booleans on the Player object by the PlatformerGameLogic script) **OR** Timer runs down to 0 without solving the question.
     2. Score is credited only if question is solved.
 
-### 2.3.2 True False Questions
+#### 3.1.2 True False Questions
 *Stage X-2 Questions are of this type.* <br>
 The GameController for this scene contains a TrueFalseGameLogic script, with the following inputs. <br>
 TrueFalseGameLogic Inputs | Description
@@ -172,7 +178,7 @@ Min Random Number | Minimum number that the equation question values can take on
     1. Both players stands on the same platform (which is verified using the `isCorrectA` and `isCorrectB` booleans on the Player object by the TrueFalseGameLogic script) **OR** Timer runs down to 0 without solving the question.
     2. Score is credited only if question is solved.
 
-### 2.3.3 Catch the Object
+#### 3.1.3 Catch the Object
 *Stage X-3 Tasks are of this type.* <br>
 The GameController for this scene contains a FallingStageGameLogic script, with the following inputs. <br>
 FallingStageGameLogic Inputs | Description
@@ -198,7 +204,7 @@ Score Display | A text object under Screen Canvas that displays the number of fl
     1. Timer runs down to 0.
     2. The number of flasks caught is multiplied by 5 and credited to the total score.
 
-### 2.3.4 Button Shooting Questions
+#### 3.1.4 Button Shooting Questions
 *Stage X-4 Questions are of this type.* <br>
 The GameController for this scene contains a PlusMinusGameLogic script while all the buttons in the scene each contains a ButtonCollision script, with the following inputs. <br>
 PlusMinusGameLogic Inputs | Description
@@ -228,7 +234,7 @@ Num Value | A text object under World Canvas that displays the value of the butt
     1. Players make the `Current Sum` equal to the `Target Sum` **OR** Timer runs down to 0 without solving the question.
     2. Score is credited only if question is solved.
 
-### 2.3.5 Knowing Each Other Questions
+#### 3.1.5 Knowing Each Other Questions
 *Stage X-5 Questions are of this type.* <br>
 The GameController for this scene contains a TrivialQuestionsGameLogic script, while the buttons (left/A, down/S, right/D) in the scene correlates with the 3 options present in the scenes to choose from. <br>
 TrivialQuestionsGameLogic Inputs | Description
@@ -256,7 +262,7 @@ Total Number Of Questions Asked | A text object under Screen Canvas that display
     2. Score is credited to the number of questions answered correctly.
 
 
-### 2.3.6 "Boss Fight"
+#### 3.1.6 "Boss Fight"
 *Stage X-6 Tasks are of this type.* <br>
 The GameController for this scene contains a PlatformGameLogicBoss script, while all the interactions in the scene each contains a PlayerHealth and EnemySpawner scripts, with the following inputs. <br>
 PlatformGameLogicBoss Inputs | Description
@@ -292,3 +298,12 @@ Number Of Monsters | Count of number of enemies released so far.
 3. Stage End
     1. All enemies killed **OR** Both players died **OR** Timer runs down to 0.
     2. Score is credited to the number of enemies killed.
+
+### 3.2 Endless Mode
+-WIP-
+
+## 4 Design Considerations
+-WIP-
+
+## 5 Testing
+-WIP-
