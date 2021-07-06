@@ -25,6 +25,14 @@ X-5 | 20 per identical answer | 0
 X-F | 100 + 5 per enemy killed | 0
 
 ### 1.4 Difficulty Mechanics
+There are three difficulty levels in the game: Easy, Normal, and Hard. <br>
+Difficulty for Stage 3 | Chance of Blue Flask Spawning
+------------ | -------------
+Easy | 0.25
+Normal | 0.5
+Hard | 0.75
+
+### 1.5 Stage Mechanics
 As the level increases, questions will progressively get harder. <br>
 Levels for Stage 1 | Individual Platform Numbers Capped At
 ------------ | -------------
@@ -42,13 +50,13 @@ Levels for Stage 2 | Individual Numbers of [Equation](https://github.com/marcusl
 4-2 | 50
 5-2 | 60
 
-Levels for Stage 3 | Chance of Blue Flask Spawning
+Levels for Stage 3 | Spawn Gap between Flasks (in seconds)
 ------------ | -------------
-1-3 | 0
-2-3 | 0.2
-3-3 | 0.4
-4-3 | 0.6
-5-3 | 0.8
+1-3 | 2
+2-3 | 1.6
+3-3 | 1.2
+4-3 | 0.8
+5-3 | 0.5
 
 Levels for Stage 4 | Number of Buttons | Possibility of Repeated Numbers of the Same Sign | Numbers Capped At
 ------------ | ------------- | ------------- | -------------
@@ -74,17 +82,17 @@ Levels for Final Stage | Number of Bats | Number of Hits before death for each p
 4-F | 40 | 11 | 1.7
 5-F | 40 | 9 | 1.5
 
-### 1.5 User Interface
+### 1.6 User Interface
 The following is a labelled screenshot of the user interface that every user will see in the game. <br>
 Our UI Design follows the general design of many platformer games already out in the market, with essential information at the top and the settings button on the top-right corner. This aims to provide a sense of familiarity to players who were already in contact with other games of the platformer genre prior to co-opeDown. <br>
 The implementation of the UI can be found in Section [2.2.2](https://github.com/marcuslim835/co-opeDown#222-the-dontdestroyonload-gameobject).
 <img width="756" alt="UIExplainer" src="https://user-images.githubusercontent.com/77620616/122636872-1ff05400-d11e-11eb-85e3-aa2ee7992f43.png">
 <img width="753" alt="OptionsMenu" src="https://user-images.githubusercontent.com/77620616/122636873-21218100-d11e-11eb-9f91-09d8b349a21a.png">
 
-### 1.6 Save/Load Mechanics
+### 1.7 Save/Load Mechanics
 The saving and loading system is currently not yet implemented and will be implemented by Milestone 3.
 
-### 1.7 Highscores
+### 1.8 Highscores
 
 ## 2 Game Design
 
