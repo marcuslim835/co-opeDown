@@ -24,13 +24,19 @@ X-4 | 100 + seconds remaining on the clock | 0
 X-5 | 20 per identical answer | 0
 X-F | 100 + 5 per enemy killed | 0
 
-### 1.4 Difficulty Mechanics
+### 1.4 Game Difficulty Mechanics
 There are three difficulty levels in the game: Easy, Normal, and Hard. <br>
 Difficulty for Stage 3 | Chance of Blue Flask Spawning
 ------------ | -------------
 Easy | 0.25
 Normal | 0.5
 Hard | 0.75
+
+Difficulty for Stage 4 | Buttons with IsNegative boolean set to true
+------------ | -------------
+Easy | Number generated is subtracted away from the current sum.
+Normal | Number generated is 5 times greater than the ones in Easy difficulty and is subtracted away from the current sum.
+Hard | Number generated is multiplied to the current sum.
 
 ### 1.5 Stage Mechanics
 As the level increases, questions will progressively get harder. <br>
@@ -315,3 +321,14 @@ Number Of Monsters | Count of number of enemies released so far.
 
 ## 5 Testing
 -WIP-
+### 5.1 Unit and Integration Testing
+
+### 5.2 System Testing
+
+### 5.3 Exploratory Testing
+
+### 5.4 Self Heuristic Evaluation
+
+### 5.5 User Testing 1
+
+### 5.6 User Testing 2
