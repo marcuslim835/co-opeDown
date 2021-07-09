@@ -3,6 +3,7 @@
 The developer guide is meant to provide detailed information and explaination into how the game co-opeDown works. For a brief guide, proceed to the [User Guide](https://github.com/marcuslim835/co-opeDown#1-user-guide "For Everyone") above.
 
 ### 1.1 Setting up the Game
+-WIP-
 Click the green "Code" button and press "Download ZIP" from [our GitHub](https://github.com/marcuslim835/co-opeDown). <br>
 Extract the files from the downloaded ZIP file. <br>
 For Windows Users: Open the "Windows" folder and run co-opeDown.exe to play the demo. <br>
@@ -11,7 +12,6 @@ For Mac Users: Open the "MacOS" folder and run the co-opeDown app to play the de
 ### 1.2 Player Controls
 Player 1 Controls: WAD for movement, S to shoot <br>
 Player 2 Controls: Arrow Keys (except Down Arrow) for movement, Down Arrow to shoot <br>
-The rationale for using only four keys that are adjacent to each other is to facilitate the one-handed use of a single keyboard by two players to play the game, or for one person to control both characters simultaneously.
 
 ### 1.3 Scoring Mechanics
 Scoring can differ by the different stages. <br>
@@ -26,6 +26,21 @@ X-F | 100 + 5 per enemy killed | 0
 
 ### 1.4 Game Difficulty Mechanics
 There are three difficulty levels in the game: Easy, Normal, and Hard. <br>
+
+Difficulty for Stage 1 | Type of Questions
+------------ | -------------
+Easy | Addition
+Normal | Multiplication
+Hard | Polynomials
+
+Difficulty for Stage 2 | Type of [Equation](https://github.com/marcuslim835/co-opeDown#312-true-false-questions "50% chance this type of question will be generated")
+------------ | -------------
+Easy | Addition
+Normal | Multiplication
+Hard | Multiplication and Exponents up to 2nd power
+
+Note: For statement questions, questions from different question banks will be drawn based on the difficulty level.
+
 Difficulty for Stage 3 | Chance of Blue Flask Spawning
 ------------ | -------------
 Easy | 0.25
@@ -48,7 +63,7 @@ Levels for Stage 1 | Individual Platform Numbers Capped At
 4-1 | 50
 5-1 | 60
 
-Levels for Stage 2 | Individual Numbers of [Equation](https://github.com/marcuslim835/co-opeDown#232-true-false-questions) Capped At
+Levels for Stage 2 | Individual Numbers of [Equation](https://github.com/marcuslim835/co-opeDown#312-true-false-questions "50% chance this type of question will be generated") Capped At
 ------------ | -------------
 1-2 | 20
 2-2 | 30
@@ -96,7 +111,7 @@ The implementation of the UI can be found in Section [2.2.2](https://github.com/
 <img width="753" alt="OptionsMenu" src="https://user-images.githubusercontent.com/77620616/122636873-21218100-d11e-11eb-9f91-09d8b349a21a.png">
 
 ### 1.7 Save/Load Mechanics
-The saving and loading system is currently not yet implemented and will be implemented by Milestone 3.
+There are three save slots available, each capable of storing game sessions in both Classic and Endless Mode, its corresponding difficulty, and the current score. Save files will bring players back to the most recently completed stage. Save files can be deleted only from the main menu but can be loaded in every single scene except the credits screen. The save/load system can be accessed from the options menu while in game, and from the "Load Game" button in the main menu. <br>
 
 ### 1.8 Highscores
 
@@ -138,8 +153,8 @@ Tilemap | Used to place platforms, floor and position limits of the map.
 World Canvas | Used to display the relevant information tied to the world (eg. labels for tiles or buttons).
 Screen Canvas | Used to display the questions and counters related to the stage on the display for the player.
 GameController | Contains the scripts specific to each stage. To be discussed in the following subsections.
-Player_1/2 | As mentioned in [2.2.3](https://github.com/marcuslim835/co-opeDown#223-player-object).
-GameObject | As mentioned in [2.2.2](https://github.com/marcuslim835/co-opeDown#222-the-dontdestroyonload-gameobject).
+Player_1/2 | As mentioned in [2.3](https://github.com/marcuslim835/co-opeDown#23-player-object).
+GameObject | As mentioned in [2.2](https://github.com/marcuslim835/co-opeDown#22-the-dontdestroyonload-gameobject).
 
 #### 3.1.1 Platform Questions
 *Stage X-1 Questions are of this type.* <br>
@@ -150,6 +165,7 @@ Player1 | Reference to Player_1
 Player2 | Reference to Player_2
 Text List | A list of text under World Canvas that serves to display a unique number with every platform.
 Sum | A text object under Screen Canvas that displays the sum needed for the player to clear the stage.
+Instructions | A text object under Screen Canvas that displays the instructions for the stage.
 Max Random Number | Maximum number that any platform's value can take on
 Min Random Number A | Minimum number that the first correct platform's value can take on
 Min Random Number B | Minimum number that the second correct platform's value can take on
@@ -161,7 +177,7 @@ Min Random Number B | Minimum number that the second correct platform's value ca
     3. Unique numbers that cannot be added together to give the correct sum are randomly generated for the remaining platforms using `Max Random Number` and `Min Random Number A`.
 2. Stage in Progress
     1. Timer from ScoreTimeManager script is started.
-    2. Collision detection using the PlayerCollision script on the [Player](https://github.com/marcuslim835/co-opeDown#223-player-object) object to detect if the player is standing on the correct platforms.
+    2. Collision detection using the PlayerCollision script on the [Player](https://github.com/marcuslim835/co-opeDown#23-player-object) object to detect if the player is standing on the correct platforms.
 3. Stage End
     1. Players stands on the 2 chosen platforms (which is verified using the `isCorrectA` and `isCorrectB` booleans on the Player object by the PlatformerGameLogic script) **OR** Timer runs down to 0 without solving the question.
     2. Score is credited only if question is solved.
@@ -187,7 +203,7 @@ Min Random Number | Minimum number that the equation question values can take on
     4. Should the question be a equation question, two numbers are randomized using `Max Random Number` and `Min Random Number`. The two numbers will make up the equation to be displayed in the Question text object. If the answer is True, the sum displayed will be the sum of both numbers. If the answer is False, an offset number will be randomized between 1 to 4 and added to the total sum displayed (hence making the equation false).
 2. Stage in Progress
     1. Timer from ScoreTimeManager script is started.
-    2. Collision detection using the PlayerCollision script on the [Player](https://github.com/marcuslim835/co-opeDown#223-player-object) object to detect which platform the player is standing on.
+    2. Collision detection using the PlayerCollision script on the [Player](https://github.com/marcuslim835/co-opeDown#23-player-object) object to detect which platform the player is standing on.
 3. Stage End
     1. Both players stands on the same platform (which is verified using the `isCorrectA` and `isCorrectB` booleans on the Player object by the TrueFalseGameLogic script) **OR** Timer runs down to 0 without solving the question.
     2. Score is credited only if question is solved.
@@ -317,7 +333,10 @@ Number Of Monsters | Count of number of enemies released so far.
 -WIP-
 
 ## 4 Design Considerations
--WIP-
+1. WIP
+2. The rationale for using only four keys that are adjacent to each other is to facilitate the one-handed use of a single keyboard by two players to play the game, or for one person to control both characters simultaneously. Reducing the number of keys used to control the player to the bare minimum of 4 would make the controls easier for the user to learn, utilize, and remember.
+3. The save/load system is designed to only save the most essential information about a user's session: score, game mode, and game difficulty. This was purposely designed this way to avoid the bottleneck of the read/write speed of save files and improve the user experience by making save/load times virtually zero. This comes with a drawback however, it being that any currently incompleted level will be randomly re-generated when the save file is loaded back in. We believe that this minor drawback in exchange for a better user experience is inconsequential, as shown(?) by our user survey (IMPT: NEED DO USER SURVEY).
+4. Some users may find that the difficulty progression from level to level could be much larger than expected. For example, on "Normal" mode, the numbers for Level 1-1 are generally around the low-100s, but increase to the mid-1000s nearing Level 5-1. This is not a bug, but rather an intended consequence of our approach to the educational aspect of co-opeDown. While reading up on the ways education can be made more efficient to students, we came across [an article](https://www.jstor.org/stable/44430322) that  suggests that a hands-on and verbal approach allows for more information to be retained by learners. That got us thinking: How are we going to make use of this information to create something that would be both hands-on and verbal? Sure enough, educational games are hands-on but they require no verbal communications, since calculations can be done mentally by oneself. To encourage players to verbalize their thought process, we decided to set the later levels at a difficulty that we believed normal players would not be able to do on their own. As such, players are forced to verbalize their thoughts and work with their partners to solve the questions, which fits our vision of a hands-on and verbal approach to educational games.
 
 ## 5 Testing
 -WIP-
