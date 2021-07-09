@@ -351,3 +351,12 @@ Number Of Monsters | Count of number of enemies released so far.
 ### 5.5 User Testing 1
 
 ### 5.6 User Testing 2
+
+## 6 Software Engineering
+
+### 6.1 Version Control using Unity Teams
+Due to the pandemic, we have decided that we are going to code from home wherever possible and reduce in person meetings. As such, there was a need to practice version control to manage our codes properly. There were two main options available to us, namely branching with Git or Unity Collaborate in Unity Teams. Compared to the steep learning curve that Git has in store for us, we settled on the Unity Collaborate due to its flexibility and its ability to revert code changes, which has allowed us to hit the ground running while still learning and coming up with project management and version control guidelines for use between the both of us. Since then, we have agreed on several things before we publish code on Unity Collaborate (aka commit code for GitHubbers). As mentioned in [5.1](), unit and integration testing has to be performed and passed for the scenes that have been modified or added to ensure that no unwanted code that could introduce unwanted bugs are published. After a code publish by one of us, the other party syncs the published code and reviews whether the code does what it is meant to do. Otherwise, the older version is restored and the code publisher is notified to make changes. Below is a screenshot of what our typical Unity Collaborate version history looks like.
+![image](https://user-images.githubusercontent.com/77620616/125093025-81478980-e104-11eb-8bd0-a290c0fc8563.png)
+
+### 6.2 Project Management
+To totally eliminate the risk of publishing errors that may arise from bugs in Unity Collaborate, we have assigned WIPWIP
