@@ -1,5 +1,6 @@
-# co-opeDown ReadME
-Orbital 2021 Apollo 11 Project <br>
+# co-opeDown
+Orbital 2021 **Apollo 11** Project <br>
+Looking for a LoA upgrade :bowtie: <br>
 Developed using Unity 2020.3.7f1 <br>
 
 **Project Resources** <br>
@@ -8,14 +9,13 @@ Developed using Unity 2020.3.7f1 <br>
 3. [Aim](https://github.com/marcuslim835/co-opeDown#3-aim "Marksmanship over 9000")
 4. [User Stories](https://github.com/marcuslim835/co-opeDown#4-user-stories "Who doesn't like a good old story?")
 5. [Features and Timeline](https://github.com/marcuslim835/co-opeDown#5-features-and-timeline "On Time, On Target!")
-6. [Credits](https://github.com/marcuslim835/co-opeDown#6-credits "Many Thanks!")
+6. [Project Log](https://github.com/marcuslim835/co-opeDown#6-project-log "Time well spent")
+7. [Credits](https://github.com/marcuslim835/co-opeDown#7-credits "Many Thanks!")
 
 **Other Project Resources (redirects to another document)** <br>
 - [Project Poster](https://drive.google.com/file/d/1jx97fc7IDTosgmvtMr1OwiCqHEbdTbzZ/view?usp=sharing "Artistic Talent overflowing")
 
 - [Project Video](https://drive.google.com/file/d/1sG1sSsElKX2x5TalWBKIrSE_wuQUK0Ur/view?usp=sharing "More hype than CP2077!")
-
-- [Project Log](https://TOBECHANGED/ "Problems Faced and Hours Spent found here!")
 
 - [User Guide and FAQs](https://github.com/marcuslim835/co-opeDown/blob/main/UserGuide.md#user-guide "For users")
 
@@ -26,10 +26,28 @@ Developed using Unity 2020.3.7f1 <br>
 
 ## 2 Motivation
 
+With the resurgence of Covid-19, many people find themselves stuck at home with their family members and want to take the opportunity to engage with their family to strengthen bonds and interactions from the safety of their own homes. Many popular computer-based multiplayer games currently out in the market are non family-friendly. We hope to build a game that is suitable for all ages in a family setting for all to participate in as the game requires teamwork and multitasking. This is a more beneficial use of time as it provides people a platform to bond and interact. 
+
+The 2D platformer game is set in a dreamed up world where a pair of chickens are the protagonists of the story. In our game, we dive deeper into the dreamscapes by solving the problems that are located on each level/stage. Join the chickens in their quest to travel round the world while vaccinating the bats!
+
 ## 3 Aim
 We hope to make a co-op game suitable for most ages to play when they feel bored, while engaging in some problem solving and bonding activities.
 
 ## 4 User Stories
+
+| Game Feature                                                  | User Story                                                    |
+| ------------------------------------------------------------- | ------------------------------------------------------------- |
+| **Educational** - Platform, True/False, Button Shooting Questions | As a loving brother who would like to educate his siblings, I want to be able to play a game together that is relevant to current times and is both fun and educational. |
+|  | As a parent who knows that their children are deeply absorbed into the world of computer games, I want to ensure that they are spending their time on more educational games that could help with their cognitive development. |
+| **Bonding** - Knowing Each Other Questions                      | As a parent who would like to connect with their children who are deeply absorbed into the world of computer games, I want to have an opportunity to be able to bond with them in an environment they are comfortable in. |
+|  | As a loving brother who would like to connect with his siblings, I want to be able to play a game together that enables me to get to know them better. |
+| **Fun without Violence** \- Catch the Object, Boss Fight Levels | As a student who is constantly misunderstood by my parents because they think that games cause violence, I would like to introduce my parents to the world of gaming that is both fulfilling and educational. |
+| **Save/Load System**                                          | As a person who has commitments in real life, I want to be able to put down a game that I am playing and return to it without losing progress. |
+| **One-handed Controls**                                       | As a person that owns an ultrabook that is very small in size, I want to be able to play a co-op game without having to use an external keyboard. |
+| **Infinite Replayability**                                    | As a person who likes fresh things, I want to be able to play the game over and over without it getting stale. |
+| **Handcrafted Assets**                                        | As a person who has played lots of 2D games already out in the market, I want to play a game that looks different from all the games built from the same asset packs. |
+| **Highscore**                                                 | As a person who is very flamboyant, I would like to be able to show off my achievements in-game to others. |
+| **Endless Mode**                                              | As a person who is only into gaming because of the educational element, I want to be able to solely play the stages with the educational aspect. |
 
 ## 5 Features and Timeline
 ### 5.1 Timeline
@@ -49,7 +67,52 @@ Different Game Difficulties | Differing sets of problems for different age group
 2 Game Modes | Classic mode for an all-round experience, Endless mode for those dedicated to only solving math problems.
 <img width="482" alt="difficultyExplainer" src="https://user-images.githubusercontent.com/77620616/124533973-e752b900-de45-11eb-8973-ebed412c1dc1.png">
 
-## 6 Credits
+## 6 Project Log
+
+| No. | Task                                                                       | Date                  | Orbitee 1 (hrs) | Orbitee 2 (hrs) | Remarks |
+| --- | -------------------------------------------------------------------------- | --------------------- | --------------- | --------------- | ----------------- |
+| 1   | Team Meeting: Initial project conceptualization                            | 9/5/2021              | 3               | 3               | 1) Discussed tech stacks to be used for the project <br> 2) Discussed general idea for the flow of game |
+| 2   | Team Meeting: Project Poster                                               | 12/5/2021             | 3               | 3               | 1) Discussed what features to be implemented in the project <br> 2) Drew out our project poster |
+| 3   | Team Meeting: Project Video Recording & Editing                            | 14/5/2021             | 4               | 4               | 1) Scripted and recorded project video <br> 2) Edited project video online |
+| 4   | Learning Tech Stacks                                                       | 15/5/2021 - 20/5/2021 | 8               | 8               | 1) Watched relevant tutorials on Unity Engine |
+| 5   | Online Team Meeting: Implementation details and initial project structure  | 21/5/2021             | 4               | 4               | 1) Delegate tasks for the weekend <br> 2) Discussed project artistic style and level implementation <br> 3) Setup files needed for Milestone 1 submission |
+| 6   | Work from Home: Tilemap Design, Wireframing, Level Background Design       | 22/5/2021 - 24/5/2021 | 8               | 8               | 1) Draw wireframe <br> 2) Draw tilemap and level background |
+| 7   | Work from Home: Level Design, Player Controls                              | 25/5/2021             | 7               | 7               | 1) Tinker with level design and create a sample level <br> 2) Develop player controls |
+| 8   | Work from Home: Level Logic, Player Sprites                                | 27/5/2021             | 8               | 8               | 1) Work on level logic and finishing up sample level <br> 2) Draw player sprites |
+| 9   | Work from Home: Project Video, Readme, Log                                 | 28/5/2021             | 3               | 3               | 1) Edit project video with new in-game footage <br> 2) Write out project readme and log |
+| 10  | Online Team Meeting: Evaluate other teams, Review feedback                 | 1/6/2021 - 4/6/2021   | 4               | 4               | 1) Evaluated other project groups <br> 2) Discussed about how we can make the project better based on feedback |
+| 11  | Work from Home: Bug Fixing, Shooting and Animation, Code Optimization      | 4/6/2021 - 7/6/2021   | 8               | 8               | 1) Implement projectile firing and its animations <br> 2) Fixed collision detection bugs <br> 3) Reduced amount of duplicated code by transferring game objects from scene to scene |
+| 12  | Mission Control #4: Software Testing and Qualitative Evaluation            | 5/6/2021              | 4               | 4               | 1) Attended the workshops for Software Testing and Qualitative Evaluation |
+| 13  | Work from Home: Templates for variants of game stages                      | 8/6/2021 - 11/6/2021  | 14              | 14              | 1) True/False Question Stage <br> 2) +/- Button Stage <br> 3) Coordinated Button Pressing Stage <br> 4) Obstacle Course Stage <br> 5) Boss Fight Stage |
+| 14  | Work from Home: Global Variables and User Interface                        | 12/6/2021 - 14/6/2021 | 8               | 8               | 1) Pause Menu <br> 2) Creating a Scoring System and standardizing scores given across the different levels and stages <br> 3) Background Music Triggers based on current level |
+| 15  | Work from Home: Level Creation                                             | 15/6/2021 - 17/6/2021 | 10              | 10              | 1) Create different levels of increasing difficulty based on stage templates (elaborated in dev guide) |
+| 16  | Work from Home: User Guide and Developer Guide                             | 18/6/2021 - 24/6/2021 | 14              | 14              | 1) Create user guide  <br> 2) Create developer guide <br> 3) Create pictures used to illustrate the design of the game and its logic |
+| 17  | Private Testing: Exploratory Testing, System Testing and Bug Fixing        | 21/6/2021 - 26/6/2021 | 16              | 16              | 1) Plan and Conduct System Testing <br> 2) Conduct Exploratory Testing to fill any gaps <br> 3) Fix bugs found |
+| 18  | Work from Home: Project Video and Poster, Start Menu                       | 25/6/2021 - 27/6/2021 | 8               | 8               | 1) Make new project video from scratch <br> 2) Modify project poster to include more space for contents <br> 3) Replace Start Menu Background |
+| 19  | Work from Home: Project Log, Readme                                        | 27/6/2021             | 6               | 6               | 1) Tidy up project log <br> 2) Update project readme with testing information |
+| 20  | Online Team Meeting: Evaluate other teams, Review feedback                 | 1/7/2021 - 3/7/2021   | 4               | 4               | 1) Evaluated other project groups <br> 2) Discussed about how we can make the project better based on feedback |
+| 21  | Work from Home: Game Setup UI, Save/Load System UI                         | 30/6/2021 - 3/7/2021  | 6               | 6               | 1) Created UI and code for choosing game mode and difficulty <br> 2) Created UI and skeleton to implement a save/load system |
+| 22  | Work from Home: Endless Mode, Transition Animations                        | 4/7/2021 - 6/7/2021   | 4               | 4               |    |
+| 23  | Work from Home: Code for Different Difficulties for all existing stages    | 7/7/2021 - 10/7/2021  | 7               | 7               |    |
+| 24  | Work from Home: Highscore, Integrate save/load system                      | 11/7/2021 - 12/7/2021 |                 |                 |    |
+| 25  | Work from Home: Final Touch-up, Update User and Developer Guides           | 17/7/2021 - 26/7/2021 |                 |                 |    |
+| 26  | User Testing: Design and Conduct User Testing 1                            | 17/7/2021 - 20/7/2021 |                 |                 |    |
+| 27  | Work from Home: Optimization using User Feedback and Bug Fixing            | 21/7/2021 - 22/7/2021 |                 |                 |    |
+| 28  | User Testing: Design and Conduct User Testing 2                            | 22/7/2021 - 24/7/2021 |                 |                 |    |
+| 29  | Work from Home: Optimization using User Feedback and Bug Fixing            | 25/7/2021 - 26/7/2021 |                 |                 |    |
+| 30  | Work from Home: Project Video, Poster, Log, and Readme                     | 21/7/2021 - 26/7/2021 |                 |                 |    |
+
+Note 1: Work from Home sessions are usually followed by an online team meeting to update project logs and set the agenda for the next few days of working from home, but are excluded from the computation of total hours for simplicity.
+
+Note 2: Part of the project documentation (such as project logs) was done as the templates/code was written. As such, the time spent on project documentation during the coding process has been included with the Work from Home sessions.
+
+Note 3: Progress on the project in the period between 13/7/2021 and 16/7/2021 was halted due to NS ICT commitments by both orbitees.
+
+| Total Hours | Orbitee 1 | Orbitee 2 |
+| ----------- | --------- | --------- |
+| 280 | 140 | 140 |
+
+## 7 Credits
 We would like to thank Lanturnip, ScheduleNeuron, tOThEmOoN, and our advisor Gerald for providing helpful evaluations of our project.
 
 Movement script is based on the one provided by Unity as part of their Standard Assets.
