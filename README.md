@@ -10,7 +10,8 @@ Developed using Unity 2020.3.7f1 <br>
 4. [User Stories](https://github.com/marcuslim835/co-opeDown#4-user-stories "Who doesn't like a good old story?")
 5. [Features and Timeline](https://github.com/marcuslim835/co-opeDown#5-features-and-timeline "On Time, On Target!")
 6. [Project Log](https://github.com/marcuslim835/co-opeDown#6-project-log "Time well spent")
-7. [Credits](https://github.com/marcuslim835/co-opeDown#7-credits "Many Thanks!")
+7. [Responses on Milestone Evaluation Feedback](https://github.com/marcuslim835/co-opeDown#7-responses-on-milestone-feedback "Arigatou Gozaimasu!")
+8. [Credits](https://github.com/marcuslim835/co-opeDown#8-credits "Many Thanks!")
 
 **Other Project Resources (redirects to another document)** <br>
 - [Project Poster](https://drive.google.com/file/d/1jx97fc7IDTosgmvtMr1OwiCqHEbdTbzZ/view?usp=sharing "Artistic Talent overflowing")
@@ -19,7 +20,7 @@ Developed using Unity 2020.3.7f1 <br>
 
 - [User Guide and FAQs](https://github.com/marcuslim835/co-opeDown/blob/main/UserGuide.md#user-guide "For users")
 
-- [Developer Guide, Design Considerations, and Testing](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#developer-guide "For developers who are interested in our implementation")
+- [Developer Guide, Design Considerations, Testing, and Software Engineering](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#developer-guide "For developers who are interested in our implementation")
 
 ## 1 Quick Start Guide
 -Work in Progress-
@@ -110,9 +111,30 @@ Note 3: Progress on the project in the period between 13/7/2021 and 16/7/2021 wa
 
 | Total Hours | Orbitee 1 | Orbitee 2 |
 | ----------- | --------- | --------- |
-| 280 | 140 | 140 |
+| TBC | TBC | TBC |
 
-## 7 Credits
+## 7 Responses on Milestone Feedback
+We value all the evaluations that we get from the feedback exercises and hence we will endeavour to provide a response as to how we can work together to produce a better final product.
+
+### 7.1 Milestone 1
+| Suggestion | Response |
+| ---------- | -------- |
+| Point 1 (Level based design) and point 3 (Differing difficult levels) seem to overlap, please clarify in your readme. | TBC |
+| Since this is a family game as well, the game can be made such that more than 2 players can play it together at the same time as well, hence solving the problem that you mentioned. | TBC |
+| More details on the tech stack can be shown to let use know what is going on behind the scenes. The flowchart does not really show how the different level of difficulty is going to be implemented and the infinite replayability feature. More details on these would be great! Poster can be better done with the features shown being more prominent. | TBC |
+| The poster could have included the features more clearly with details. As of now, I am unable to obtain much information from the poster without reading the README. | TBC |
+| I feel that these features right now are pretty easy to implement (aside from local multiplayer if you do something like LAN) so I do believe if you are aiming for Apollo 11 you can look into including a storyline and maybe add a social aspect to the game to compare scores with others from an online leaderboard! | TBC |
+| However, one thing I can add is to playtest alot and early into the beginning phase. For any game, you need to have constant feedback and playtesting would accomplish just that. | TBC |
+| Infinite replayability with randomly generated questions: If these questions are randomly generated, how many questions do the group intend to make? The amount of work needed seems to be never-ending and countless. Perhaps refining this would be a bit more plausible. | TBC |
+| Bugs for current build: Sometimes just being in the vicinity of the number platforms without standing on them will already trigger the game to end. Can be solved by moving the Box Collider 2D components so no problem. You may want to take a look at the OnCollisionStay2D function vs OnCollisionEnter2D function if you are using Unity version 2020. | WIP |
+| Since Unity does not have a global variable system (scenes are discrete) here's a script that allows you to transfer objects that you want to be constantly running between scenes. I used it for a continuous music player in my game. >Script skipped to save space | WIP |
+
+### 7.2 Milestone 2
+| Suggestion | Response |
+| ---------- | -------- |
+| TBC | TBC |
+
+## 8 Credits
 We would like to thank Lanturnip, ScheduleNeuron, tOThEmOoN, and our advisor Gerald for providing helpful evaluations of our project.
 
 Movement script is based on the one provided by Unity as part of their Standard Assets.
