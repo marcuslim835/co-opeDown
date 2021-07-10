@@ -1,6 +1,9 @@
+# Contents
+-Work in Progress-
+
 # Developer Guide
 ## 1 Overview
-The developer guide is meant to provide detailed information and explaination into how the game co-opeDown works. For a brief guide, proceed to the [User Guide](https://github.com/marcuslim835/co-opeDown#1-user-guide "For Everyone") above.
+The developer guide is meant to provide detailed information and explaination into how the game co-opeDown works. For a brief guide, proceed to the [User Guide](https://github.com/marcuslim835/co-opeDown/blob/main/UserGuide.md#contents "For Everyone") above.
 
 ### 1.1 Setting up the Game
 -WIP-
@@ -33,7 +36,7 @@ Easy | Addition
 Normal | Multiplication
 Hard | Polynomials
 
-Difficulty for Stage 2 | Type of [Equation](https://github.com/marcuslim835/co-opeDown#312-true-false-questions "50% chance this type of question will be generated")
+Difficulty for Stage 2 | Type of [Equation](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#312-true-false-questions "50% chance this type of question will be generated")
 ------------ | -------------
 Easy | Addition
 Normal | Multiplication
@@ -63,7 +66,7 @@ Levels for Stage 1 | Individual Platform Numbers Capped At
 4-1 | 50
 5-1 | 60
 
-Levels for Stage 2 | Individual Numbers of [Equation](https://github.com/marcuslim835/co-opeDown#312-true-false-questions "50% chance this type of question will be generated") Capped At
+Levels for Stage 2 | Individual Numbers of [Equation](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#312-true-false-questions "50% chance this type of question will be generated") Capped At
 ------------ | -------------
 1-2 | 20
 2-2 | 30
@@ -106,7 +109,7 @@ Levels for Final Stage | Number of Bats | Number of Hits before death for each p
 ### 1.6 User Interface
 The following is a labelled screenshot of the user interface that every user will see in the game. <br>
 Our UI Design follows the general design of many platformer games already out in the market, with essential information at the top and the settings button on the top-right corner. This aims to provide a sense of familiarity to players who were already in contact with other games of the platformer genre prior to co-opeDown. <br>
-The implementation of the UI can be found in Section [2.2.2](https://github.com/marcuslim835/co-opeDown#222-the-dontdestroyonload-gameobject).
+The implementation of the UI can be found in Section [2.2](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#22-the-dontdestroyonload-gameobject).
 <img width="756" alt="UIExplainer" src="https://user-images.githubusercontent.com/77620616/122636872-1ff05400-d11e-11eb-85e3-aa2ee7992f43.png">
 <img width="753" alt="OptionsMenu" src="https://user-images.githubusercontent.com/77620616/122636873-21218100-d11e-11eb-9f91-09d8b349a21a.png">
 
@@ -153,8 +156,8 @@ Tilemap | Used to place platforms, floor and position limits of the map.
 World Canvas | Used to display the relevant information tied to the world (eg. labels for tiles or buttons).
 Screen Canvas | Used to display the questions and counters related to the stage on the display for the player.
 GameController | Contains the scripts specific to each stage. To be discussed in the following subsections.
-Player_1/2 | As mentioned in [2.3](https://github.com/marcuslim835/co-opeDown#23-player-object).
-GameObject | As mentioned in [2.2](https://github.com/marcuslim835/co-opeDown#22-the-dontdestroyonload-gameobject).
+Player_1/2 | As mentioned in [2.3](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#23-player-object).
+GameObject | As mentioned in [2.2](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#22-the-dontdestroyonload-gameobject).
 
 #### 3.1.1 Platform Questions
 *Stage X-1 Questions are of this type.* <br>
@@ -177,7 +180,7 @@ Min Random Number B | Minimum number that the second correct platform's value ca
     3. Unique numbers that cannot be added together to give the correct sum are randomly generated for the remaining platforms using `Max Random Number` and `Min Random Number A`.
 2. Stage in Progress
     1. Timer from ScoreTimeManager script is started.
-    2. Collision detection using the PlayerCollision script on the [Player](https://github.com/marcuslim835/co-opeDown#23-player-object) object to detect if the player is standing on the correct platforms.
+    2. Collision detection using the PlayerCollision script on the [Player](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#23-player-object) object to detect if the player is standing on the correct platforms.
 3. Stage End
     1. Players stands on the 2 chosen platforms (which is verified using the `isCorrectA` and `isCorrectB` booleans on the Player object by the PlatformerGameLogic script) **OR** Timer runs down to 0 without solving the question.
     2. Score is credited only if question is solved.
@@ -203,7 +206,7 @@ Min Random Number | Minimum number that the equation question values can take on
     4. Should the question be a equation question, two numbers are randomized using `Max Random Number` and `Min Random Number`. The two numbers will make up the equation to be displayed in the Question text object. If the answer is True, the sum displayed will be the sum of both numbers. If the answer is False, an offset number will be randomized between 1 to 4 and added to the total sum displayed (hence making the equation false).
 2. Stage in Progress
     1. Timer from ScoreTimeManager script is started.
-    2. Collision detection using the PlayerCollision script on the [Player](https://github.com/marcuslim835/co-opeDown#23-player-object) object to detect which platform the player is standing on.
+    2. Collision detection using the PlayerCollision script on the [Player](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#23-player-object) object to detect which platform the player is standing on.
 3. Stage End
     1. Both players stands on the same platform (which is verified using the `isCorrectA` and `isCorrectB` booleans on the Player object by the TrueFalseGameLogic script) **OR** Timer runs down to 0 without solving the question.
     2. Score is credited only if question is solved.
@@ -343,6 +346,38 @@ Number Of Monsters | Count of number of enemies released so far.
 ### 5.1 Unit and Integration Testing
 
 ### 5.2 System Testing
+System Testing was conducted by both of us based on a list of inputs and expected behaviors that we had come up with prior to testing. The manual testing was done separately and independently from each other and collated into the “Actual Behavior” column. The system testing was conducted between 21 to 26 June and Test Cases 1 to 22 were run. <br>
+**Compatibility Testing under System Testing:** An informal compatibility test was also done in the same time period with the help of some of our friends, where we asked them to run the game on their computers (different operating environments) to see if it works. No compatibility issues were found on Windows 10. A bug on the MacOS where UI and buttons were out of proportions was found since MacOS sometimes forces co-opeDown to launch in full screen mode. In response, all screen canvases were changed from fixed size to scaling with a reference size of 1920x1080. Screen resizing was disabled as well.
+
+| No. | Scene | Input                                          | Expected Behavior                                                     | Actual Behavior         |
+| --- | ----- | ---------------------------------------------- | --------------------------------------------------------------------- | ----------------------- |
+| 1   | X-1   | Within time limit, correct platforms           | Clear stage, score added                                              | 2-1: Did not clear stage <br> Others: No deviation                                                                                                                         |
+| 2   | X-1   | Within time limit, wrong platforms             | No response                                                           | No deviation            |
+| 3   | X-1   | Within time limit, both stand on same platform | No response                                                           | No deviation            |
+| 4   | X-1   | Reached time limit                             | End stage, no score added                                             | No deviation            |
+| 5   | X-2   | Within time limit, both on correct platform    | Clear stage, score added                                              | No deviation            |
+| 6   | X-2   | Within time limit, both on incorrect platform  | End stage, no score added                                             | No deviation            |
+| 7   | X-2   | Within time limit, only 1 on either platform   | No response                                                           | No deviation            |
+| 8   | X-2   | Reached time limit                             | End stage, no score added                                             | No deviation            |
+| 9   | X-3   | No objects collected                           | No score added                                                        | No deviation            |
+| 10  | X-3   | 2 blue flasks and 6 normal flasks collected    | 50 added to score (30 for Level 1-3)                                  | No deviation            |
+| 11  | X-4   | Within time limit, correct sum reached         | Clear stage, score added                                              | No deviation            |
+| 12  | X-4   | Within time limit, overshot correct sum        | No response                                                           | No deviation            |
+| 13  | X-4   | Within time limit, reached negative value      | No response                                                           | No deviation            |
+| 14  | X-4   | Reached time limit                             | End stage, no score added                                             | No deviation            |
+| 15  | X-5   | Within time limit, both same answer            | Clear question, score to be added increased                           | No deviation            |
+| 16  | X-5   | Within time limit, both different answer       | Clear question, score to be added remains the same                    | No deviation            |
+| 17  | X-5   | Within time limit, one answer                  | No response                                                           | No deviation            |
+| 18  | X-5   | Reached time limit                             | Clear question, score to be added remains the same                    | No deviation            |
+| 19  | X-F   | Finish without deaths                          | Clear stage, score to be added according to number of bats vaccinated | X-F: Score added even though bats were not vaccinated <br> Otherwise: Stage is cleared/ended normally without deviation |
+| 20  | X-F   | Finish with 1 death                            | Clear stage, score to be added according to number of bats vaccinated | Same as Above
+| 21  | X-F   | 2 deaths                                       | End stage, score to be added according to number of bats vaccinated   | Same as Above
+| 22  | X-F   | Finish without scoring                         | Clear stage, base score will still be added                           | No deviation            |
+
+| Failed Test Case | Fixes Applied                                                                  |
+| ---------------- | ------------------------------------------------------------------------------ |
+| 1                | Colliders were adjusted on Level 2-1 to make collision detection more reliable |
+| 19/20/21         | Scoring changed to ensure score is only added if bat collides with the bullet for Scenes X-F |
 
 ### 5.3 Exploratory Testing
 
@@ -355,8 +390,9 @@ Number Of Monsters | Count of number of enemies released so far.
 ## 6 Software Engineering
 
 ### 6.1 Version Control using Unity Teams
-Due to the pandemic, we have decided that we are going to code from home wherever possible and reduce in person meetings. As such, there was a need to practice version control to manage our codes properly. There were two main options available to us, namely branching with Git or Unity Collaborate in Unity Teams. Compared to the steep learning curve that Git has in store for us, we settled on the Unity Collaborate due to its flexibility and its ability to revert code changes, which has allowed us to hit the ground running while still learning and coming up with project management and version control guidelines for use between the both of us. Since then, we have agreed on several things before we publish code on Unity Collaborate (aka commit code for GitHubbers). As mentioned in [5.1](), unit and integration testing has to be performed and passed for the scenes that have been modified or added to ensure that no unwanted code that could introduce unwanted bugs are published. After a code publish by one of us, the other party syncs the published code and reviews whether the code does what it is meant to do. Otherwise, the older version is restored and the code publisher is notified to make changes. Below is a screenshot of what our typical Unity Collaborate version history looks like.
-![image](https://user-images.githubusercontent.com/77620616/125093025-81478980-e104-11eb-8bd0-a290c0fc8563.png)
+Due to the pandemic, we have decided that we are going to code from home wherever possible and reduce in person meetings. As such, there was a need to practice version control to manage our codes properly. There were two main options available to us, namely branching with Git or Unity Collaborate in Unity Teams. Compared to the steep learning curve that Git has in store for us, we settled on the Unity Collaborate due to its flexibility and its ability to revert code changes, which has allowed us to hit the ground running while still learning and coming up with project management and version control guidelines for use between the both of us. <br>
+Since then, we have agreed on several things before we publish code on Unity Collaborate (aka commit code for GitHubbers). As mentioned in [5.1](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#51-unit-and-integration-testing), unit and integration testing has to be performed and passed for the scenes that have been modified or added to ensure that no unwanted code that could introduce unwanted bugs are published. After a code publish by one of us, the other party syncs the published code and reviews whether the code does what it is meant to do. Otherwise, the older version is restored and the code publisher is notified to make changes. Below is a screenshot of what our typical Unity Collaborate version history looks like.
+![image](https://user-images.githubusercontent.com/77620616/125154294-e85c5100-e18b-11eb-84e7-4b8d8e6bae45.png)
 
 ### 6.2 Project Management
 To totally eliminate the risk of publishing errors that may arise from bugs in Unity Collaborate, we have assigned WIPWIP
