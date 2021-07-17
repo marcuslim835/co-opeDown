@@ -23,7 +23,10 @@ Developed using Unity 2020.3.7f1 <br>
 - [Developer Guide, Design Considerations, Testing, and Software Engineering](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#developer-guide "For developers who are interested in our implementation")
 
 ## 1 Quick Start Guide
--Work in Progress-
+For Windows Users: Download the game by clicking [here](https://github.com/marcuslim835/co-opeDown/releases/download/beta-v0.6/Windows.zip) <br>
+For Mac Users: <br>
+
+After download, extract the files from the zip folder and run co-opeDown.
 
 ## 2 Motivation
 
@@ -32,7 +35,7 @@ With the resurgence of Covid-19, many people find themselves stuck at home with 
 The 2D platformer game is set in a dreamed up world where a pair of chickens are the protagonists of the story. In our game, we dive deeper into the dreamscapes by solving the problems that are located on each level/stage. Join the chickens in their quest to travel round the world while vaccinating the bats!
 
 ## 3 Aim
-We hope to make a co-op game suitable for most ages to play when they feel bored, while engaging in some problem solving and bonding activities.
+We hope to make a co-op game suitable for most ages to play when they feel bored, while engaging in some intellectual and bonding activities.
 
 ## 4 User Stories
 
