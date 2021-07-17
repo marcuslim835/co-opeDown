@@ -2,6 +2,7 @@
 Orbital 2021 **Apollo 11** Project <br>
 Looking for a LoA upgrade :bowtie: <br>
 Developed using Unity 2020.3.7f1 <br>
+Available on Windows, MacOS, and on [our Github Pages](https://marcuslim835.github.io/co-opeDown-WebGL/)
 
 **Project Resources** <br>
 1. [Quick Start Guide](https://github.com/marcuslim835/co-opeDown#1-quick-start-guide "Get Gaming Now!")
@@ -23,10 +24,11 @@ Developed using Unity 2020.3.7f1 <br>
 - [Developer Guide, Design Considerations, Testing, and Software Engineering](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#developer-guide "For developers who are interested in our implementation")
 
 ## 1 Quick Start Guide
-For Windows Users: Download the game by clicking [here](https://github.com/marcuslim835/co-opeDown/releases/download/beta-v0.6/Windows.zip) <br>
+For Windows Users: Download the game by [clicking here](https://github.com/marcuslim835/co-opeDown/releases/download/beta-v0.6/Windows.zip) <br>
 For Mac Users: <br>
+After download, extract the files from the zip folder and run co-opeDown. <br>
 
-After download, extract the files from the zip folder and run co-opeDown.
+Alternatively, you can play the game in your browser by [clicking here](https://marcuslim835.github.io/co-opeDown-WebGL/)
 
 ## 2 Motivation
 
@@ -95,10 +97,10 @@ Different Game Difficulties | Differing sets of problems for different age group
 | 18  | Work from Home: Project Video and Poster, Start Menu                       | 25/6/2021 - 27/6/2021 | 8               | 8               | 1) Make new project video from scratch <br> 2) Modify project poster to include more space for contents <br> 3) Replace Start Menu Background |
 | 19  | Work from Home: Project Log, Readme                                        | 27/6/2021             | 6               | 6               | 1) Tidy up project log <br> 2) Update project readme with testing information |
 | 20  | Online Team Meeting: Evaluate other teams, Review feedback                 | 1/7/2021 - 3/7/2021   | 4               | 4               | 1) Evaluated other project groups <br> 2) Discussed about how we can make the project better based on feedback |
-| 21  | Work from Home: Game Setup UI, Save/Load System UI                         | 30/6/2021 - 3/7/2021  | 6               | 6               | 1) Created UI and code for choosing game mode and difficulty <br> 2) Created UI and skeleton to implement a save/load system |
-| 22  | Work from Home: Endless Mode, Transition Animations                        | 4/7/2021 - 6/7/2021   | 4               | 4               |    |
-| 23  | Work from Home: Code for Different Difficulties for all existing stages    | 7/7/2021 - 10/7/2021  | 7               | 7               |    |
-| 24  | Work from Home: Highscore, Integrate save/load system                      | 11/7/2021 - 12/7/2021 |                 |                 |    |
+| 21  | Work from Home: Game Setup UI, Save/Load System UI                         | 30/6/2021 - 3/7/2021  | 6               | 6               | 1) Created UI and code for choosing game mode and difficulty <br> 2) Created UI and skeleton to implement a save/load system for classic mode |
+| 22  | Work from Home: Endless Mode, Transition Animations                        | 4/7/2021 - 6/7/2021   | 4               | 4               | 1) Created Endless Mode <br> 2) Created transitions for loading in, stage complete, and stage fail |
+| 23  | Work from Home: Code for Different Difficulties for all existing stages    | 7/7/2021 - 10/7/2021  | 7               | 7               | 1) Added different question generation mechanics for the respective stages in classic mode and endless mode |
+| 24  | Work from Home: Highscore, Integrate save/load system                      | 11/7/2021 - 12/7/2021 | 5               | 5               | 1) Added highscore display in main menu <br> 2) Updated save/load system to allow it to work with endless mode and different difficulty levels |
 | 25  | Work from Home: Final Touch-up, Update User and Developer Guides           | 17/7/2021 - 26/7/2021 |                 |                 |    |
 | 26  | User Testing: Design and Conduct User Testing 1                            | 17/7/2021 - 20/7/2021 |                 |                 |    |
 | 27  | Work from Home: Optimization using User Feedback and Bug Fixing            | 21/7/2021 - 22/7/2021 |                 |                 |    |
