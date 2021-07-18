@@ -1,16 +1,45 @@
-# Contents
--Work in Progress-
-
 # Developer Guide
+1) [Overview](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#1-overview)
+   1) [Setting up the Game](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#11-setting-up-the-game)
+   2) [Player Controls](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#12-player-controls)
+   3) [Scoring Mechanics](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#13-scoring-mechanics)
+   4) [Difficulty Mechanics](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#14-game-difficulty-mechanics)
+   5) [Level Mechanics](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#15-level-mechanics)
+   6) [User Interface](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#16-user-interface)
+   7) [Save/Load Mechanics](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#17-saveload-mechanics)
+   8) [Highscore](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#18-highscore)
+2) [Game Design](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#2-game-design)
+   1) [General Game Flow](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#21-general-game-flow)
+   2) [The DontDestroyOnLoad GameObject](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#22-the-dontdestroyonload-gameobject)
+   3) [Player Object](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#23-player-object)
+   4) [Transitions](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#24-transitions)
+3) [Game Modes](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#3-game-modes)
+   1) [Classic Mode](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#31-classic-mode)
+      1) [Platform Questions](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#311-platform-questions)
+      2) [True False Questions](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#312-true-false-questions)
+      3) [Catch the Object](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#313-catch-the-object)
+      4) [Button Shooting Questions](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#314-button-shooting-questions)
+      5) [Knowing Each Other Questions](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#315-knowing-each-other-questions)
+      6) ["Boss Fight"](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#316-boss-fight)
+   2) [Endless Mode](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#32-endless-mode)
+4) [Design Considerations](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#4-design-considerations)
+5) [Testing](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#5-testing)
+   1) [Unit and Integration Testing](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#51-unit-and-integration-testing)
+   2) [System Testing](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#52-system-testing)
+   3) [Exploratory Testing](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#53-exploratory-testing)
+   4) [Self Heuristic Evaluation](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#54-self-heuristic-evaluation)
+   5) [User Testing 1](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#55-user-testing-1)
+   6) [User Testing 2](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#56-user-testing-2)
+   7) [Other Problems outside of Regular Testing]
+6) [Software Engineering](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#6-software-engineering)
+   1) [Version Control using Unity Teams](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#61-version-control-using-unity-teams)
+   2) [Project Management](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#62-project-management)
+
 ## 1 Overview
-The developer guide is meant to provide detailed information and explaination into how the game co-opeDown works. For a brief guide, proceed to the [User Guide](https://github.com/marcuslim835/co-opeDown/blob/main/UserGuide.md#contents "For Everyone") above.
+The developer guide is meant to provide detailed information and explaination into how the game co-opeDown works. For a brief guide, proceed to the [User Guide](https://github.com/marcuslim835/co-opeDown/blob/main/UserGuide.md#user-guide "For Everyone").
 
 ### 1.1 Setting up the Game
--WIP-
-Click the green "Code" button and press "Download ZIP" from [our GitHub](https://github.com/marcuslim835/co-opeDown). <br>
-Extract the files from the downloaded ZIP file. <br>
-For Windows Users: Open the "Windows" folder and run co-opeDown.exe to play the demo. <br>
-For Mac Users: Open the "MacOS" folder and run the co-opeDown app to play the demo.
+Refer to the [quick start guide](https://github.com/marcuslim835/co-opeDown/blob/main/README.md#1-quick-start-guide).
 
 ### 1.2 Player Controls
 Player 1 Controls: WAD for movement, S to shoot <br>
@@ -56,7 +85,7 @@ Easy | Number generated is subtracted away from the current sum.
 Normal | Number generated is 5 times greater than the ones in Easy difficulty and is subtracted away from the current sum.
 Hard | Number generated is multiplied to the current sum.
 
-### 1.5 Stage Mechanics
+### 1.5 Level Mechanics
 As the level increases, questions will progressively get harder. <br>
 Levels for Stage 1 | Individual Platform Numbers Capped At
 ------------ | -------------
@@ -110,13 +139,27 @@ Levels for Final Stage | Number of Bats | Number of Hits before death for each p
 The following is a labelled screenshot of the user interface that every user will see in the game. <br>
 Our UI Design follows the general design of many platformer games already out in the market, with essential information at the top and the settings button on the top-right corner. This aims to provide a sense of familiarity to players who were already in contact with other games of the platformer genre prior to co-opeDown. <br>
 The implementation of the UI can be found in Section [2.2](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#22-the-dontdestroyonload-gameobject).
-<img width="756" alt="UIExplainer" src="https://user-images.githubusercontent.com/77620616/122636872-1ff05400-d11e-11eb-85e3-aa2ee7992f43.png">
-<img width="753" alt="OptionsMenu" src="https://user-images.githubusercontent.com/77620616/122636873-21218100-d11e-11eb-9f91-09d8b349a21a.png">
+<img width="1450" alt="UIExplainer" src="https://user-images.githubusercontent.com/77620616/122636872-1ff05400-d11e-11eb-85e3-aa2ee7992f43.png">
+<img width="1450" alt="OptionsMenu" src="https://user-images.githubusercontent.com/77620616/126060977-91237fd4-a5d4-45bd-b5e9-c2c0d2804fcd.png">
 
 ### 1.7 Save/Load Mechanics
-There are three save slots available, each capable of storing game sessions in both Classic and Endless Mode, its corresponding difficulty, and the current score. Save files will bring players back to the most recently completed stage. Save files can be deleted only from the main menu but can be loaded in every single scene except the credits screen. The save/load system can be accessed from the options menu while in game, and from the "Load Game" button in the main menu. <br>
+There are three save slots available, each capable of storing game sessions in both Classic and Endless Mode. <br>
+Save files will bring players back to the most recently completed stage. However, due to certain [design considerations](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#4-design-considerations), questions will be re-generated everytime the game is loaded. <br> 
+Save files can be deleted only from the main menu but can be loaded in every single scene except the credits screen. <br>
+The save/load system can be accessed from the options menu while in game, and from the "Load Game" button in the main menu. <br>
 
-### 1.8 Highscores
+Save files are stored as PlayerPrefs, with each save file having 2 separate string PlayerPref values and 1 integer PlayerPref value to store the difficulty, game mode, and the current score respectively. <br>
+PlayerPrefs are stored as a registry key for Windows, as a .plist file for MacOS, and using the browser's IndexedDB API for WebGL.
+<img width="1450" alt="MainSaveMenu" src="https://user-images.githubusercontent.com/77620616/126061083-34f1f664-4a5c-41aa-b8de-d1b9d66cff21.png">
+<img width="1450" alt="SaveMenu" src="https://user-images.githubusercontent.com/77620616/126060980-4ac28078-04fb-4fd0-afcd-dd01c647688a.png">
+
+### 1.8 Highscore
+Users can view their highscores in the main menu. <br>
+Highscores are cross-checked with the current score in the credits screen and updated if applicable. <br>
+
+Highscores are stored as 6 separate integer PlayerPrefs, with each representing a different game mode and game difficulty. <br>
+PlayerPrefs are stored as a registry key for Windows, as a .plist file for MacOS, and using the browser's IndexedDB API for WebGL. <br>
+<img width="1450" alt="MainMenuHS" src="https://user-images.githubusercontent.com/77620616/126061147-0c22e7e4-1c4b-440a-89db-8e1561d8792a.png">
 
 ## 2 Game Design
 
@@ -342,7 +385,8 @@ Number Of Monsters | Count of number of enemies released so far.
 4. Some users may find that the difficulty progression from level to level could be much larger than expected. For example, on "Normal" mode, the numbers for Level 1-1 are generally around the low-100s, but increase to the mid-1000s nearing Level 5-1. This is not a bug, but rather an intended consequence of our approach to the educational aspect of co-opeDown. While reading up on the ways education can be made more efficient to students, we came across [an article](https://www.jstor.org/stable/44430322) that  suggests that a hands-on and verbal approach allows for more information to be retained by learners. That got us thinking: How are we going to make use of this information to create something that would be both hands-on and verbal? Sure enough, educational games are hands-on but they require no verbal communications, since calculations can be done mentally by oneself. To encourage players to verbalize their thought process, we decided to set the later levels at a difficulty that we believed normal players would not be able to do on their own. As such, players are forced to verbalize their thoughts and work with their partners to solve the questions, which fits our vision of a hands-on and verbal approach to educational games.
 
 ## 5 Testing
--WIP-
+To ensure that the game that we are delivering is in tip-top condition, multiple forms of testing were employed throughout the coding process.
+
 ### 5.1 Unit and Integration Testing
 
 ### 5.2 System Testing
@@ -380,12 +424,55 @@ System Testing was conducted by both of us based on a list of inputs and expecte
 | 19/20/21         | Scoring changed to ensure score is only added if bat collides with the bullet for Scenes X-F |
 
 ### 5.3 Exploratory Testing
+Exploratory Testing was conducted by both of us after we had finished with system testing and are satisfied that scripted testing would be unlikely to surface any more bugs.
+
+| No. | Scene | Input | Expected Behavior | Bugged Behavior | Bug Fixes |
+| --- | ----- | ----- | ----------------- | --------------- | --------- |
+| 1   | X-1   | Jumping at a platform from underneath it | No collision detected. | Collision was detected and level was cleared. | Platform colliders were moved upwards on the y-axis |
+| 2   | 2-F   | Going to a tight spot on the bottom right of the map | Bats still able to pathfind to the chickens | ![pathfindError](https://user-images.githubusercontent.com/77620616/126062266-b2b4eb60-26c1-4eae-969e-2f11eb5bd776.png) | All stage X-F tilemaps were adjusted to ensure no tight spots are present so that the pathfinding AI is able to always reach the chicken |
+| 3   | X-5   | Input answers before next question is generated | Score will not be added when there is no new questions yet | Score can be added, allowing possibility of total score > max score allowed. | Added additional checkpoint functions and booleans to prevent inputs on keyboard to affect the scoring system in the stage |
+| 4   | 1-2   | None (basically just question generation) | Question properly displayed with apostrophe | ![aprostropheError](https://user-images.githubusercontent.com/77620616/126062281-4673fa4e-d385-4927-894c-d469c53febe9.png) | All symbols were removed from the true/false question banks |
 
 ### 5.4 Self Heuristic Evaluation
+H2-1: Visibility of system status
+1) Pressing shoot key triggers an animation to shoot
+2) Movement keys causes player sprites to move
+
+H2-2: Match system and real world
+1) Settings icons used is universally recognized albeit customized
+2) UI Layout is similar to those of the 2D platformer genre
+
+H2-3: User control and freedom
+1) Option to return to main menu or quit game present on all scenes, either through the settings menu or through a highly visible labelled button
+
+H2-4: Consistency and standards
+1) Same canvas used for the settings menu
+2) Same canvas used for in game UI
+3) Same animations used for stage transitions
+
+H2-5: Error prevention
+1) System and Exploratory Testing done to eliminate prominent bugs
+
+H2-6: Recognition rather than recall
+1) Instructions for every stage displayed clearly in the middle of the screen
+
+H2-7: Flexibility and efficiency of use
+1) Only 4 keys used per player
+
+H2-8: Aesthetic and minimalist design
+1) Instructions kept as concise as possible
+
+H2-9: Help users recognize, diagnose and recover from errors
+1) N/A
+
+H2-10: Help and documentation
+1) User and Developer Guides are provided with the game download
 
 ### 5.5 User Testing 1
 
 ### 5.6 User Testing 2
+
+### 5.7 Other Problems outside of Regular Testing
 
 ## 6 Software Engineering
 
