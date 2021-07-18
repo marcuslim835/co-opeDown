@@ -26,7 +26,8 @@ Available on Windows, MacOS, and on [our Github Pages](https://marcuslim835.gith
 ## 1 Quick Start Guide
 For Windows Users: Download the game by [clicking here](https://github.com/marcuslim835/co-opeDown/releases/download/beta-v0.6/Windows.zip) <br>
 For Mac Users: Download the game by [clicking here](https://github.com/marcuslim835/co-opeDown/releases/download/beta-v0.6/MacOS.zip) <br>
-After download, extract the files from the zip folder and run co-opeDown. <br>
+After download, on Windows, extract the files from the zip folder and run co-opeDown. <br>
+On Mac, there may be a warning preventing the app from launching. Use spotlight to open (security & privacy). Under "General", press OPEN ANYWAY for ""Co-opedown" was blocked from use because it is not from an identified developer" and run co-opeDown. <br>
 
 Alternatively, you can play the game in your browser by [clicking here](https://marcuslim835.github.io/co-opeDown-WebGL/)
 
