@@ -149,6 +149,7 @@ We value all the evaluations that we get from the feedback exercises and hence w
 We would like to thank Lanturnip, ScheduleNeuron, tOThEmOoN, and our advisor Gerald for providing helpful evaluations of our project.
 
 Movement script is based on the one provided by Unity as part of their Standard Assets.
+Bat AI script is shared by the A* Pathfinding Project on: https://arongranberg.com/astar/download
 
 Corona by Alexander Nakarada | https://www.serpentsoundstudios.com <br>
 Music promoted by https://www.chosic.com/ <br>
