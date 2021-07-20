@@ -13,6 +13,7 @@
    2) [The DontDestroyOnLoad GameObject](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#22-the-dontdestroyonload-gameobject)
    3) [Player Object](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#23-player-object)
    4) [Transitions](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#24-transitions)
+   5) [Tutorial](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#25-tutorial)
 3) [Game Modes](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#3-game-modes)
    1) [Classic Mode](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#31-classic-mode)
       1) [Platform Questions](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#311-platform-questions)
@@ -28,8 +29,7 @@
    2) [System Testing](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#52-system-testing)
    3) [Exploratory Testing](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#53-exploratory-testing)
    4) [Self Heuristic Evaluation](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#54-self-heuristic-evaluation)
-   5) [User Testing 1](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#55-user-testing-1)
-   6) [User Testing 2](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#56-user-testing-2)
+   5) [User Testing](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#55-user-testing)
 6) [Software Engineering](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#6-software-engineering)
    1) [Version Control using Unity Teams](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#61-version-control-using-unity-teams)
    2) [Project Management](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#62-project-management)
@@ -187,6 +187,8 @@ Weapon | Script used to eliminate enemies (bats) and trigger buttons when the we
 
 ### 2.4 Transitions
 -WIP-
+
+### 2.5 Tutorial
 
 ## 3 Game Modes
 ### 3.1 Classic Mode
@@ -489,9 +491,7 @@ H2-9: Help users recognize, diagnose and recover from errors
 H2-10: Help and documentation
 1) User and Developer Guides are provided with the game download
 
-### 5.5 User Testing 1
-
-### 5.6 User Testing 2
+### 5.5 User Testing
 
 ## 6 Software Engineering
 
