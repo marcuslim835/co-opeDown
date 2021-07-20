@@ -30,10 +30,10 @@
    4) [Self Heuristic Evaluation](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#54-self-heuristic-evaluation)
    5) [User Testing 1](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#55-user-testing-1)
    6) [User Testing 2](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#56-user-testing-2)
-   7) [Other Problems outside of Regular Testing]
 6) [Software Engineering](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#6-software-engineering)
    1) [Version Control using Unity Teams](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#61-version-control-using-unity-teams)
    2) [Project Management](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#62-project-management)
+   3) [Mistakes to Avoid](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#63-mistakes-to-avoid)
 
 ## 1 Overview
 The developer guide is meant to provide detailed information and explaination into how the game co-opeDown works. For a brief guide, proceed to the [User Guide](https://github.com/marcuslim835/co-opeDown/blob/main/UserGuide.md#user-guide "For Everyone").
@@ -388,6 +388,18 @@ Number Of Monsters | Count of number of enemies released so far.
 To ensure that the game that we are delivering is in tip-top condition, multiple forms of testing were employed throughout the coding process.
 
 ### 5.1 Unit and Integration Testing
+Unit testing was done everytime changes to any script is made and published. Testing was done by adding the following code to the individual methods to print words into the console when in "Play" mode to ensure the method calls are executed correctly.
+> Debug.Log("Words Here")
+
+At the same time, integration testing was done everytime changes to any script attached to the [DontDestroyOnLoad Gameobject](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#22-the-dontdestroyonload-gameobject) or any script using Unity SceneManager is made and published. Testing was done using Unity Play Mode.
+
+| No. | Encounter Date | Problem                                                                      | Solution |
+| --- | -------------- | ---------------------------------------------------------------------------- | -------- |
+| 1   | 27/5/2021      | Numbers on the platform in world view looks very blurry in world canvas      | Increase font size of text and reduce scaling of text to increase sharpness |
+| 2   | 27/5/2021      | Camera cannot fit both players when both players move to extreme ends of map | Moved all UI elements to a screen view canvas instead of attaching to the camera. Zooming is based on FOV instead of orthographic size. |
+| 3   | 18/6/2021      | <img width="350" alt="despawnError" src="https://user-images.githubusercontent.com/77620616/126296547-d2d090b5-ce89-449d-b7ae-702120c43ffa.png"> Flasks not despawning after hitting the ground in new levels with different tile textures | Tilemap readjusted to make sure the floor is below y = -3.35, since flasks are programmed to despawn at -3.35. |
+| 4   | 18/6/2021      | Player sinking into  tilemap after tilemap is slightly edited                | Re-generate tilemap collider by unchecking and rechecking “Used by Composite” |
+| 5   | 11/7/2021      | Transition is triggered more than once                                       | Turns out to be a [Unity Bug](https://answers.unity.com/questions/981044/animator-trigger-not-reseting-bug.html). Manually reset trigger using "animator.ResetTrigger("triggerName") |
 
 ### 5.2 System Testing
 System Testing was conducted by both of us based on a list of inputs and expected behaviors that we had come up with prior to testing. The manual testing was done separately and independently from each other and collated into the “Actual Behavior” column. The system testing was conducted between 21 to 26 June and Test Cases 1 to 22 were run. <br>
@@ -422,6 +434,15 @@ System Testing was conducted by both of us based on a list of inputs and expecte
 | ---------------- | ------------------------------------------------------------------------------ |
 | 1                | Colliders were adjusted on Level 2-1 to make collision detection more reliable |
 | 19/20/21         | Scoring changed to ensure score is only added if bat collides with the bullet for Scenes X-F |
+
+A second system testing was conducted before User Testing 1 on 17 June and Test Cases 1 to 22 were run thrice, once for each difficulty. No deviations were detected. In addition, Test Cases 23 to 26 were also run thrice, once for each difficulty to test the endless mode.
+
+| No. | Scene | Input                                          | Expected Behavior                                                     | Actual Behavior         |
+| --- | ----- | ---------------------------------------------- | --------------------------------------------------------------------- | ----------------------- |               
+| 23  | E-E   | Within time limit, correct platforms           | Clear stage, score added, re-generate question with new parameters    | No deviation            |
+| 24  | E-E   | Within time limit, wrong platforms             | End game, no score added                                              | No deviation            |
+| 25  | E-E   | Within time limit, both stand on same platform | No response                                                           | No deviation            |
+| 26  | E-E   | Reached time limit                             | End game, no score added                                              | No deviation            |
 
 ### 5.3 Exploratory Testing
 Exploratory Testing was conducted by both of us after we had finished with system testing and are satisfied that scripted testing would be unlikely to surface any more bugs.
@@ -472,8 +493,6 @@ H2-10: Help and documentation
 
 ### 5.6 User Testing 2
 
-### 5.7 Other Problems outside of Regular Testing
-
 ## 6 Software Engineering
 
 ### 6.1 Version Control using Unity Teams
@@ -483,3 +502,8 @@ Since then, we have agreed on several things before we publish code on Unity Col
 
 ### 6.2 Project Management
 To totally eliminate the risk of publishing errors that may arise from bugs in Unity Collaborate, we have assigned WIPWIP
+
+### 6.3 Mistakes to Avoid
+In light of some of our easily avoidable missteps, we find that it would be beneficial to future teams for us to list out some mistakes that are avoidable but have been made by us. <br>
+1) Instead of creating a unity project on a GitHub repository folder, we have mistakenly believed that the GitHub repository should contain only exported builds of co-opeDown. A quick google search for Unity2D projects on GitHub would reveal that is not the case -- most of those repositories in fact contain raw Unity Project Files. We have since corrected that mistake and aligned our repository to the norm.
+2) Instead of uploading the GitIgnore file after all Unity files have been uploaded, the GitIgnore file should be added before, since it does not retroactively apply to already indexed files.
