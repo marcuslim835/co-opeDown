@@ -822,7 +822,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Decide whether the following is true or false.
+  m_Text: Both players should stand on the same platform with the correct answer.
 --- !u!222 &623988966
 CanvasRenderer:
   m_ObjectHideFlags: 0

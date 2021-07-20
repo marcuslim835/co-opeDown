@@ -80,12 +80,6 @@ public class MainMenuLogic : MonoBehaviour
         highScoreHardEndless.text = PlayerPrefs.GetInt("HighScoreHardEndless", 0).ToString();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void OpenGameSetup()
     {
         canvas.SetActive(true);

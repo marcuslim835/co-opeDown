@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class OptionsMenu : MonoBehaviour
 {
     public GameObject canvas;
+    public Button saveloadButton;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +17,14 @@ public class OptionsMenu : MonoBehaviour
 
     public void OpenOptions()
     {
+        if (SceneManager.GetActiveScene().name == "SceneTUT")
+        {
+            saveloadButton.interactable = false;
+        }
+        else
+        {
+            saveloadButton.interactable = true;
+        }
         canvas.SetActive(true);
         Time.timeScale = 0;
     }

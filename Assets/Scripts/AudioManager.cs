@@ -47,27 +47,31 @@ public class AudioManager : MonoBehaviour
         }
         else if (sceneName.Substring(sceneName.Length - 3, 1) == "1")
         {
-            CheckStopPlay("Fragile");
+            CheckStopPlay("1Fragile");
         }
         else if(sceneName.Substring(sceneName.Length - 3, 1) == "2")
         {
-            CheckStopPlay("RiseNShine");
+            CheckStopPlay("2RiseNShine");
         }
         else if(sceneName.Substring(sceneName.Length - 3, 1) == "3")
         {
-            CheckStopPlay("Corona");
+            CheckStopPlay("3Corona");
         }
         else if (sceneName.Substring(sceneName.Length - 3, 1) == "4")
         {
-            CheckStopPlay("BrazilianSF");
+            CheckStopPlay("4BrazilianSF");
         }
         else if (sceneName.Substring(sceneName.Length - 3, 1) == "5")
         {
-            CheckStopPlay("Adventure");
+            CheckStopPlay("5Adventure");
         }
         else if (sceneName.Substring(sceneName.Length - 3, 1) == "E")
         {
-            CheckStopPlay("ReachingTheSky");
+            CheckStopPlay("EReachingTheSky");
+        }
+        else if (sceneName.Substring(sceneName.Length - 3, 1) == "T")
+        {
+            CheckStopPlay("TForestWalk");
         }
     }
 

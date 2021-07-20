@@ -36,19 +36,19 @@ public class EnemyAI : MonoBehaviour
         if (PlayerPrefs.GetString("GameDifficulty") == "Easy")
         {
             speed = 350;
-            nextWaypointDistance = 1f;
+         
             Debug.Log("easy");
         }
         else if (PlayerPrefs.GetString("GameDifficulty") == "Normal")
         {
             speed = 450;
-            nextWaypointDistance = 1.1f;
+            
             Debug.Log("normal");
         }
         else
         {
             speed = 550;
-            nextWaypointDistance = 1f;
+            
             Debug.Log("hard");
         }
 
