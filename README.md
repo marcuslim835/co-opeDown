@@ -108,10 +108,10 @@ Different Game Difficulties | Differing sets of problems for different age group
 | 23  | Work from Home: Code for Different Difficulties for all existing stages    | 7/7/2021 - 10/7/2021  | 7               | 7               | 1) Added different question generation mechanics for the respective stages in classic mode and endless mode |
 | 24  | Work from Home: Highscore, Integrate save/load system                      | 11/7/2021 - 12/7/2021 | 5               | 5               | 1) Added highscore display in main menu <br> 2) Updated save/load system to allow it to work with endless mode and different difficulty levels |
 | 25  | Work from Home: Final Touch-up, Update User and Developer Guides           | 17/7/2021 - 26/7/2021 |                 |                 |    |
-| 26  | User Testing: Design and Conduct User Testing 1                            | 17/7/2021 - 20/7/2021 |                 |                 |    |
-| 27  | Work from Home: Optimization using User Feedback and Bug Fixing            | 21/7/2021 - 22/7/2021 |                 |                 |    |
-| 28  | User Testing: Design and Conduct User Testing 2                            | 22/7/2021 - 24/7/2021 |                 |                 |    |
-| 29  | Work from Home: Optimization using User Feedback and Bug Fixing            | 25/7/2021 - 26/7/2021 |                 |                 |    |
+| 26  | User Testing: Design and Conduct User Testing 1                            | 17/7/2021 - 20/7/2021 | 6               | 6               | 1) Design questions and tasks to test games and verify problems <br> 2) Gather feedback from 5 pairs of users |
+| 27  | Work from Home: Optimization using User Feedback and Bug Fixing            | 20/7/2021 - 21/7/2021 | 4               | 4               | 1) Added tutorial to the game <br> 2) Modified instructions for Stage X-2 for clarity |
+| 28  | User Testing: Design and Conduct User Testing 2                            | 21/7/2021 - 23/7/2021 |                 |                 |    |
+| 29  | Work from Home: Optimization using User Feedback and Bug Fixing            | 24/7/2021 - 26/7/2021 |                 |                 |    |
 | 30  | Work from Home: Project Video, Poster, Log, and Readme                     | 21/7/2021 - 26/7/2021 |                 |                 |    |
 
 Note 1: Work from Home sessions are usually followed by an online team meeting to update project logs and set the agenda for the next few days of working from home, but are excluded from the computation of total hours for simplicity.
