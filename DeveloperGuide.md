@@ -173,26 +173,30 @@ Objects | Description
 ------------ | -------------
 DisplayUI | The UI for the player that includes the level, score, timer, and settings.
 OptionsMenuUI | The settings UI that is disabled by default and enabled when the settings button in DisplayUI is pressed.
+SaveMenuUI | The save menu UI that is disabled by default and enabled when the save button in OptionsMenuUI is pressed.
+LevelLoader | The canvas that contains all level clear/incomplete transitions.
 NavigationOptions | Script for navigating between scenes that can be used by the different scenes (stages).
 AudioManager | Script for playing music that changes depending on the scene.
 ScoreTimeManager | Script for the score and timer in DisplayUI that can be used by the different scenes (stages).
 OptionsMenu | Script that provides functionality to the OptionsMenuUI.
+SaveLoadManager | Script that provides functionality to the SaveMenuUI.
+LevelLoader (Script) | Script that calls transitions in LevelLoader (canvas).
 
 ### 2.3 Player Object
 Objects | Description
 ------------ | -------------
 PlayerMovement | Script to give players ability to move left, right and jump up.
-PlayerCollision | Script for collision detection in 2.3.1 and 2.3.2. Value of `isCorrectA` or `isCorrectB` changes to true if player is standing on platform with "CorrectAnswerA" or "CorrectAnswerB" tags respectively.
+PlayerCollision | Script for collision detection in 3.1 and 3.2. Value of `isCorrectA` or `isCorrectB` changes to true if player is standing on platform with "CorrectAnswerA" or "CorrectAnswerB" tags respectively.
 Weapon | Script used to eliminate enemies (bats) and trigger buttons when the weapon is triggered by the player towards the direction it is facing. 
 
 ### 2.4 Transitions
--WIP-
+
 
 ### 2.5 Tutorial
 
+
 ## 3 Game Modes
-### 3.1 Classic Mode
-All classic mode stages have a timer on them. Players should clear the stage before the timer expires to be able to get the score associated with clearing the stage.
+All game mode stages have a timer on them. Players should clear the stage before the timer expires to be able to get the score associated with clearing the stage.
 Common Objects | Description
 ------------ | -------------
 Main Camera | Scenes with non-motionless cameras contain a CameraTargets script that tracks the position (transform) of both player objects and adjusts the camera view to encompass both players by adjusting the zoom level through the field of view.
@@ -203,6 +207,9 @@ Screen Canvas | Used to display the questions and counters related to the stage 
 GameController | Contains the scripts specific to each stage. To be discussed in the following subsections.
 Player_1/2 | As mentioned in [2.3](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#23-player-object).
 GameObject | As mentioned in [2.2](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#22-the-dontdestroyonload-gameobject).
+
+### 3.1 Classic Mode
+All classic mode games have 5 levels and 6 stages for each level.
 
 #### 3.1.1 Platform Questions
 *Stage X-1 Questions are of this type.* <br>
@@ -221,8 +228,8 @@ Min Random Number B | Minimum number that the second correct platform's value ca
 **Flow of Level** <br>
 1. Stage Initialization
     1. 2 platforms are randomly chosen to be the ones with the correct answer. They are assigned with the tags "CorrectAnswerA" and "CorrectAnswerB".
-    2. Unique numbers are randomly generated for the 2 chosen platforms using `Max Random Number`, `Min Random Number A`, and `Min Random Number B`. The sum of the 2 numbers are assigned to the text object `Sum`.
-    3. Unique numbers that cannot be added together to give the correct sum are randomly generated for the remaining platforms using `Max Random Number` and `Min Random Number A`.
+    2. Unique numbers are randomly generated for the 2 chosen platforms using `Max Random Number`, `Min Random Number A`, and `Min Random Number B`. The sum/product/polynomial of the 2 numbers are assigned to the text object `Sum`, depending on the game difficulty.
+    3. Unique numbers that cannot be correct answers are randomly generated for the remaining platforms using `Max Random Number` and `Min Random Number A`.
 2. Stage in Progress
     1. Timer from ScoreTimeManager script is started.
     2. Collision detection using the PlayerCollision script on the [Player](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#23-player-object) object to detect if the player is standing on the correct platforms.
@@ -248,7 +255,7 @@ Min Random Number | Minimum number that the equation question values can take on
     1. Answer to the question is randomized between True or False. The platform with the answer is assigned the tag "CorrectAnswerA" while the other is assigned the tag "CorrectAnswerB" (in other words, the tag "CorrectAnswerB" represents the incorrect platform).
     2. Question type is randomly chosen between a statement question or an equation question.
     3. Should the question be a statement question, the question is drawn from either the "TrueQuestionBank" or the "FalseQuestionBank", depending on the answer to the question.
-    4. Should the question be a equation question, two numbers are randomized using `Max Random Number` and `Min Random Number`. The two numbers will make up the equation to be displayed in the Question text object. If the answer is True, the sum displayed will be the sum of both numbers. If the answer is False, an offset number will be randomized between 1 to 4 and added to the total sum displayed (hence making the equation false).
+    4. Should the question be a equation question, two numbers are randomized using `Max Random Number` and `Min Random Number`. The two numbers will make up the equation to be displayed in the Question text object. If the answer is True, the number displayed will be the sum/product of both numbers. If the answer is False, an offset number will be randomized between 1 to 4 and added to the total number displayed (hence making the equation false).
 2. Stage in Progress
     1. Timer from ScoreTimeManager script is started.
     2. Collision detection using the PlayerCollision script on the [Player](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#23-player-object) object to detect which platform the player is standing on.
@@ -378,13 +385,36 @@ Number Of Monsters | Count of number of enemies released so far.
     2. Score is credited to the number of enemies killed.
 
 ### 3.2 Endless Mode
--WIP-
+The GameController for this scene contains a EndlessPlatformerGameLogic script, with the following inputs. <br>
+EndlessPlatformerGameLogic Inputs | Description
+------------ | -------------
+Player1 | Reference to Player_1
+Player2 | Reference to Player_2
+Text List | A list of text under World Canvas that serves to display a unique number with every platform.
+Sum | A text object under Screen Canvas that displays the sum needed for the player to clear the stage.
+Instructions | A text object under Screen Canvas that displays the instructions for the stage.
+Max Random Number | Maximum number that any platform's value can take on
+Min Random Number A | Minimum number that the first correct platform's value can take on
+Min Random Number B | Minimum number that the second correct platform's value can take on
+
+**Flow of Level** <br>
+1. Stage Initialization
+    1. 2 platforms are randomly chosen to be the ones with the correct answer. They are assigned with the tags "CorrectAnswerA" and "CorrectAnswerB".
+    2. Unique numbers are randomly generated for the 2 chosen platforms using `Max Random Number` = 20, `Min Random Number A` = 2, and `Min Random Number B` = 10. The sum/product/polynomial of the 2 numbers are assigned to the text object `Sum`, depending on the game difficulty.
+    3. Unique numbers that cannot be correct answers are randomly generated for the remaining platforms using `Max Random Number` and `Min Random Number A`.
+2. Stage in Progress
+    1. Timer from ScoreTimeManager script is started.
+    2. Collision detection using the PlayerCollision script on the [Player](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#23-player-object) object to detect if the player is standing on the correct platforms.
+3. Stage End
+    1. Players stands on the 2 chosen platforms (which is verified using the `isCorrectA` and `isCorrectB` booleans on the Player object by the EndlessPlatformerGameLogic script) **OR** Timer runs down to 0 without solving the question.
+    2. Score is credited only if question is solved.
+4. Stage Re-Loading (happens only if question is solved)
+    1. Stage is re-loaded, with `Max Random Number` += 5, `Min Random Number A` += 5, and `Min Random Number B` += 5.
 
 ## 4 Design Considerations
-1. WIP
+1. We chose to use DontDestroyOnLoad over Prefabs as it reduces scene load times and reduces the complexity of scene objects.
 2. The rationale for using only four keys that are adjacent to each other is to facilitate the one-handed use of a single keyboard by two players to play the game, or for one person to control both characters simultaneously. Reducing the number of keys used to control the player to the bare minimum of 4 would make the controls easier for the user to learn, utilize, and remember.
 3. The save/load system is designed to only save the most essential information about a user's session: score, game mode, and game difficulty. This was purposely designed this way to avoid the bottleneck of the read/write speed of save files and improve the user experience by making save/load times virtually zero. This comes with a drawback however, it being that any currently incompleted level will be randomly re-generated when the save file is loaded back in. We believe that this minor drawback in exchange for a better user experience is inconsequential, as shown by our user survey, where 60% of respondents believe that a fast save and load speed is more important than having the exact same question being generated when loading a save game. ![image](https://user-images.githubusercontent.com/77620616/126723304-bafbaf67-fc52-4861-9445-ba4918ce7666.png)
-
 4. Some users may find that the difficulty progression from level to level could be much larger than expected. For example, on "Normal" mode, the numbers for Level 1-1 are generally around the low-100s, but increase to the mid-1000s nearing Level 5-1. This is not a bug, but rather an intended consequence of our approach to the educational aspect of co-opeDown. While reading up on the ways education can be made more efficient to students, we came across [an article](https://www.jstor.org/stable/44430322) that  suggests that a hands-on and verbal approach allows for more information to be retained by learners. That got us thinking: How are we going to make use of this information to create something that would be both hands-on and verbal? Sure enough, educational games are hands-on but they require no verbal communications, since calculations can be done mentally by oneself. To encourage players to verbalize their thought process, we decided to set the later levels at a difficulty that we believed normal players would not be able to do on their own. As such, players are forced to verbalize their thoughts and work with their partners to solve the questions, which fits our vision of a hands-on and verbal approach to educational games.
 
 ## 5 Testing
@@ -447,6 +477,13 @@ A second system testing was conducted before User Testing 1 on 17 June and Test 
 | 25  | E-E   | Within time limit, both stand on same platform | No response                                                           | No deviation            |
 | 26  | E-E   | Reached time limit                             | End game, no score added                                              | No deviation            |
 
+A third system testing was conducted before User Testing 2 on 21 June and Test Cases 5 to 8 were run thrice, once for each difficulty. No deviations were detected. In addition, Test Cases 27 to 28 were also run once to test the new tutorial stage.
+
+| No. | Scene | Input                                          | Expected Behavior                                                     | Actual Behavior         |
+| --- | ----- | ---------------------------------------------- | --------------------------------------------------------------------- | ----------------------- |               
+| 27  | TUT   | Shoot all chests, stand on final platform      | Clear tutorial                                                        | No deviation            |
+| 28  | TUT   | Stand on final platform without shooting chest | No response                                                           | No deviation            |
+
 ### 5.3 Exploratory Testing
 Exploratory Testing was conducted by both of us after we had finished with system testing and are satisfied that scripted testing would be unlikely to surface any more bugs.
 
@@ -461,6 +498,7 @@ Exploratory Testing was conducted by both of us after we had finished with syste
 H2-1: Visibility of system status
 1) Pressing shoot key triggers an animation to shoot
 2) Movement keys causes player sprites to move
+3) Level clear/incomplete animations played after every stage
 
 H2-2: Match system and real world
 1) Settings icons used is universally recognized albeit customized
@@ -493,6 +531,9 @@ H2-10: Help and documentation
 1) User and Developer Guides are provided with the game download
 
 ### 5.5 User Testing
+The google forms we used for the 2 user testings can be found [here](https://forms.gle/RzeXT5eFbzq1Lofa9). <br>
+The raw data we received from the 2 user testings can be found [here](https://docs.google.com/spreadsheets/d/1DU9Yb75y01Bib81lDwYPVYg4UOJwktlwICyeo_Cn0nI/edit?usp=sharing). <br>
+yadayada
 
 ## 6 Software Engineering
 
