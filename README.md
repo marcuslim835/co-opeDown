@@ -38,7 +38,9 @@ Alternatively, you can play the game in your browser by [clicking here](https://
 
 ## 2 Motivation
 
-With the resurgence of Covid-19, many people find themselves stuck at home with their family members and want to take the opportunity to engage with their family to strengthen bonds and interactions from the safety of their own homes. Many popular computer-based multiplayer games currently out in the market are non family-friendly. We hope to build a game that is suitable for all ages in a family setting for all to participate in as the game requires teamwork and multitasking. This is a more beneficial use of time as it provides people a platform to bond and interact. 
+With the resurgence of Covid-19, many people find themselves stuck at home with their family members with nothing much to do and want to take the opportunity to engage with their family to strengthen bonds and interactions from the safety of their own homes. ![image](https://user-images.githubusercontent.com/77620616/126723453-6d17960c-3dd8-4892-9cb0-b45d2894e2c5.png)
+Many popular computer-based multiplayer games currently out in the market are non family-friendly. ![image](https://user-images.githubusercontent.com/77620616/126723476-190669fd-9e0f-4952-88e7-52653e3b4d69.png) 
+We hope to build a game that is suitable for all ages in a family setting for all to participate in as the game requires teamwork and multitasking. This is a more beneficial use of time as it provides people a platform to bond and interact. From our user survey, we find that the respondents believe there is a need for a new game that is family-friendly, fun, and educational. ![image](https://user-images.githubusercontent.com/77620616/126723531-cf8337cf-14f8-4e5b-8922-2984e9966cfb.png)
 
 The 2D platformer game is set in a dreamed up world where a pair of chickens are the protagonists of the story. In our game, we dive deeper into the dreamscapes by solving the problems that are located on each level/stage. Join the chickens in their quest to travel round the world while vaccinating the bats!
 
@@ -107,7 +109,7 @@ Different Game Difficulties | Differing sets of problems for different age group
 | 22  | Work from Home: Endless Mode, Transition Animations                        | 4/7/2021 - 6/7/2021   | 4               | 4               | 1) Created Endless Mode <br> 2) Created transitions for loading in, stage complete, and stage fail |
 | 23  | Work from Home: Code for Different Difficulties for all existing stages    | 7/7/2021 - 10/7/2021  | 7               | 7               | 1) Added different question generation mechanics for the respective stages in classic mode and endless mode |
 | 24  | Work from Home: Highscore, Integrate save/load system                      | 11/7/2021 - 12/7/2021 | 5               | 5               | 1) Added highscore display in main menu <br> 2) Updated save/load system to allow it to work with endless mode and different difficulty levels |
-| 25  | Work from Home: Final Touch-up, Update User and Developer Guides           | 17/7/2021 - 26/7/2021 |                 |                 |    |
+| 25  | Work from Home: Final Touch-up, Update User and Developer Guides           | 17/7/2021 - 26/7/2021 | 10              | 10              | 1) Update user and developer guide <br> 2) Migrate data over from google drive to github |
 | 26  | User Testing: Design and Conduct User Testing 1                            | 17/7/2021 - 20/7/2021 | 6               | 6               | 1) Design questions and tasks to test games and verify problems <br> 2) Gather feedback from 5 pairs of users |
 | 27  | Work from Home: Optimization using User Feedback and Bug Fixing            | 20/7/2021 - 21/7/2021 | 4               | 4               | 1) Analyzed user feedback <br> 2) Added tutorial to the game <br> 3) Modified instructions for Stage X-2 for clarity |
 | 28  | User Testing: Design and Conduct User Testing 2                            | 21/7/2021 - 23/7/2021 | 5               | 5               | 1) Gather feedback from another 5 pairs of users |
@@ -122,7 +124,7 @@ Note 3: Progress on the project in the period between 13/7/2021 and 16/7/2021 wa
 
 | Total Hours | Orbitee 1 | Orbitee 2 |
 | ----------- | --------- | --------- |
-| TBC | TBC | TBC |
+| 408 | 204 | 204 |
 
 ## 7 Responses on Milestone Feedback
 We value all the evaluations that we get from the feedback exercises and hence we will endeavour to provide a response as to how we can work together to produce a better final product.
@@ -169,6 +171,11 @@ https://creativecommons.org/licenses/by/4.0/
 Reaching The Sky (Long Version) by Alexander Nakarada | https://www.serpentsoundstudios.com <br>
 Music promoted by https://www.chosic.com/ <br>
 Attribution 4.0 International (CC BY 4.0) <br>
+https://creativecommons.org/licenses/by/4.0/
+
+Forest Walk by Alexander Nakarada | https://www.serpentsoundstudios.com
+Music promoted by https://www.chosic.com/
+Attribution 4.0 International (CC BY 4.0)
 https://creativecommons.org/licenses/by/4.0/
 
 Brazilian Street Fight by Punch Deck | https://soundcloud.com/punch-deck <br>
