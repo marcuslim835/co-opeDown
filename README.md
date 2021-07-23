@@ -27,12 +27,12 @@ Available on Windows, MacOS, and on [our Github Pages](https://marcuslim835.gith
 
 ## 1 Quick Start Guide
 For Windows Users: 
-1) Download the game by [clicking here](https://github.com/marcuslim835/co-opeDown/releases/download/beta-v0.6/Windows.zip) <br>
+1) Download the game by [clicking here](https://github.com/marcuslim835/co-opeDown/releases/download/v1.0/Windows.zip) <br>
 2) After download, extract the files from the zip folder and run co-opeDown. <br>
 3) There may be a warning that says "Microsoft Defender SmartScreen prevented an unrecognised app from starting. Running this app might put your PC at risk.". Click MORE INFO and press RUN ANYWAY to run co-opeDown. <br>
 
 For Mac Users: 
-1) Download the game by [clicking here](https://github.com/marcuslim835/co-opeDown/releases/download/beta-v0.6/MacOS.zip) <br>
+1) Download the game by [clicking here](https://github.com/marcuslim835/co-opeDown/releases/download/v1.0/MacOS.zip) <br>
 2) After download, extract the files from the zip folder and run co-opeDown. <br>
 3) There may be a warning preventing the app from launching. Use spotlight to open (security & privacy). Under "General", press OPEN ANYWAY for "'co-opeDown' was blocked from use because it is not from an identified developer" and run co-opeDown. <br>
 
@@ -116,9 +116,9 @@ Different Game Difficulties | Differing sets of problems for different age group
 | 25  | Work from Home: Final Touch-up, Update User and Developer Guides           | 17/7/2021 - 26/7/2021 | 10              | 10              | 1) Update user and developer guide <br> 2) Migrate data over from google drive to github |
 | 26  | User Testing: Design and Conduct User Testing 1                            | 17/7/2021 - 20/7/2021 | 6               | 6               | 1) Design questions and tasks to test games and verify problems <br> 2) Gather feedback from 5 pairs of users |
 | 27  | Work from Home: Optimization using User Feedback and Bug Fixing            | 20/7/2021 - 21/7/2021 | 4               | 4               | 1) Analyzed user feedback <br> 2) Added tutorial to the game <br> 3) Modified instructions for Stage X-2 for clarity |
-| 28  | User Testing: Design and Conduct User Testing 2                            | 21/7/2021 - 23/7/2021 | 5               | 5               | 1) Gather feedback from another 5 pairs of users |
-| 29  | Work from Home: Optimization using User Feedback and Bug Fixing            | 24/7/2021 - 26/7/2021 | 4               | 4               | 1) Analyzed user feedback <br>    |
-| 30  | Work from Home: Project Video, Poster, Log, and Readme                     | 21/7/2021 - 26/7/2021 | 9               | 9               | 1) Tidy up project log <br> 2) Update readme with testing information <br> 3) Update project video with gameplay |
+| 28  | User Testing: Design and Conduct User Testing 2                            | 21/7/2021 - 22/7/2021 | 5               | 5               | 1) Gather feedback from another 5 pairs of users |
+| 29  | Work from Home: Optimization using User Feedback and Bug Fixing            | 22/7/2021 - 23/7/2021 | 4               | 4               | 1) Analyzed user feedback <br>    |
+| 30  | Work from Home: Project Video, Poster, Log, and Readme                     | 24/7/2021 - 26/7/2021 | 9               | 9               | 1) Tidy up project log <br> 2) Update readme with testing information <br> 3) Update project video with gameplay |
 
 Note 1: Work from Home sessions are usually followed by an online team meeting to update project logs and set the agenda for the next few days of working from home, but are excluded from the computation of total hours for simplicity.
 
