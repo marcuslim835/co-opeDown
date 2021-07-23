@@ -150,7 +150,12 @@ We value all the evaluations that we get from the feedback exercises and hence w
 ### 7.2 Milestone 2
 | Suggestion | Response |
 | ---------- | -------- |
-| TBC | TBC |
+| Something you might want to take note would be to focus on the group of players that you are creating the game for: eg. If someone doesn't like FPS, don't force them to play FPSes as they will only give bad reviews. | TBC |
+| Some things to take note are that if you do want to make players play through the same levels again and again, try and add some more variety, maybe more stages etc.  | TBC |
+| it would be great if we could actually see a working demonstration of the game instead. | TBC |
+| Seems more like Button Pressing/Tapping? Or are the chickens going to shoot laser from their mouth to the respective red buttons at the sides? | TBC |
+| Perhaps show the scene of the chicken shooting would be more convincing. ATM, it does not feel special, or harder compared to any of the other games, which makes it worthy to be a 'Boss Fight'. | TBC |
+| Unit testing can be done to ensure that all the controls and the game mechanisms are working correctly. | TBC |
 
 ## 8 Credits
 We would like to thank Lanturnip, ScheduleNeuron, tOThEmOoN, and our advisor Gerald for providing helpful evaluations of our project.
