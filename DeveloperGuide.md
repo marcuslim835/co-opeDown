@@ -202,10 +202,14 @@ PlayerCollision | Script for collision detection in 3.1 and 3.2. Value of `isCor
 Weapon | Script used to eliminate enemies (bats) and trigger buttons when the weapon is triggered by the player towards the direction it is facing. 
 
 ### 2.4 Transitions
-
+Objects | Description
+------------ | -------------
+LevelLoader | Script to give each scene ability to play a suitable transition, depending on the success of each scene. There are 2 main transitions, Pass and Fail. When the players succeed to clear the scene, a Pass transition is generated, else a Fail transition is generated.
 
 ### 2.5 Tutorial
-
+Objects | Description
+------------ | -------------
+tutorial | Script used to demostrate how to move, shoot and clear stages by giving the player a visual aid on what they are controlling. The Tutorial scene have clear instructions to the players so that they can master each control in a stage like setting, getting them familiarised with the game. Each key inputted into the keyboard that correspond to a specific action can be visually seen on the game.
 
 ## 3 Game Modes
 All game mode stages have a timer on them. Players should clear the stage before the timer expires to be able to get the score associated with clearing the stage.
