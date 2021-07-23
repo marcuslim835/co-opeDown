@@ -43,15 +43,15 @@ public class PlatformGameLogicBoss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (twoPlayersDied)
-        {
-            sum.text = "Both Players Died :(";
-            Invoke("NextLevel", 1f);
-            FindObjectOfType<LevelLoader>().AllowTransit("Fail");
-        } else
-        {
-            sum.text = scoreValue.ToString();
-        }
+        //if (twoPlayersDied)
+        //{
+        //    sum.text = "Both Players Died :(";
+        //    Invoke("NextLevel", 1f);
+        //    FindObjectOfType<LevelLoader>().AllowTransit("Fail");
+        //} else
+        //{
+        //    sum.text = scoreValue.ToString();
+        //}
 
         if (FindObjectOfType<ScoreTimeManager>().GetTimeLeft() <= 0)
         {
@@ -62,6 +62,15 @@ public class PlatformGameLogicBoss : MonoBehaviour
                 Invoke("NextLevel", 1f);
                 FindObjectOfType<LevelLoader>().AllowTransit("Pass");
             }
+        } else if (twoPlayersDied)
+        {
+            //sum.text = "Both Players Died :(";
+            Invoke("NextLevel", 1f);
+            FindObjectOfType<LevelLoader>().AllowTransit("Fail");
+        }
+        else
+        {
+            sum.text = scoreValue.ToString();
         }
     }
 

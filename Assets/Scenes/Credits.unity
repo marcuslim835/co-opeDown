@@ -511,6 +511,7 @@ MonoBehaviour:
 
 
 
+
 '
 --- !u!222 &277376726
 CanvasRenderer:
@@ -1133,9 +1134,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Orbital 2021\n\nJiale\nMarcus\n\nGerald\n\nCorona by Alexander Nakarada\nMain
-    Theme (Overture) | The Grand Score by Alexander Nakarada \nAdventure by Alexander
-    Nakarada\nReaching The Sky (Long Version) by Alexander Nakarada\nhttps://www.serpentsoundstudios.com\r\n\nFragile
+  m_Text: "Orbital 2021\n\nChee Jia Le\nMarcus Lim Xiao feng\n\nGerald\n\nCorona
+    by Alexander Nakarada\nMain Theme (Overture) | The Grand Score by Alexander Nakarada
+    \nAdventure by Alexander Nakarada\nReaching The Sky (Long Version) by Alexander
+    Nakarada\nForest Walk by Alexander Nakarada\nhttps://www.serpentsoundstudios.com\r\n\nFragile
     by Keys of Moon\nWhite Petals by Keys of Moon\nhttps://soundcloud.com/keysofmoon\r\n\r\nBrazilian
     Street Fight by Punch Deck\nhttps://soundcloud.com/punch-deck\r\n\nAttribution
     4.0 International (CC BY 4.0)\r\nhttps://creativecommons.org/licenses/by/4.0/\r\nMusic

@@ -61,7 +61,10 @@ public class EnemyAI : MonoBehaviour
 
     void UpdatePath()
     {
-        if (GameObject.Find("Player_1") != null && GameObject.Find("Player_2") != null)
+        if (GameObject.Find("Player_1") == null && GameObject.Find("Player_2") == null)
+        {
+            return;
+        } else if (GameObject.Find("Player_1") != null && GameObject.Find("Player_2") != null)
         { // Both Players Alive
             tList[0] = GameObject.Find("Player_1");
             tList[1] = GameObject.Find("Player_2");
