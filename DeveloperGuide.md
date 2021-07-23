@@ -85,6 +85,18 @@ Easy | Number generated is subtracted away from the current sum.
 Normal | Number generated is 5 times greater than the ones in Easy difficulty and is subtracted away from the current sum.
 Hard | Number generated is multiplied to the current sum.
 
+Difficulty for Stage 5 | Timer duration
+------------ | -------------
+Easy | Timer countdowns from 15s.
+Normal | Timer countdowns from 10s.
+Hard | Timer countdowns from 5s.
+
+Difficulty for Stage F | Enemy's health expectancy
+------------ | -------------
+Easy | Enemy's health set at 50HP.
+Normal | Enemy's health set at 100HP.
+Hard | Enemy's health set at 150HP.
+
 ### 1.5 Level Mechanics
 As the level increases, questions will progressively get harder. <br>
 Levels for Stage 1 | Individual Platform Numbers Capped At
