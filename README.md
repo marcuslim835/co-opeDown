@@ -1,10 +1,12 @@
 # co-opeDown
 Orbital 2021 **Apollo 11** Project <br>
-Looking for a LoA upgrade :bowtie: <br>
 Developed using Unity 2020.3.7f1 <br>
+Artwork drawn with Procreate, Piskel, and Microsoft Paint <br>
+Video created using Lightworks <br>
 Available on Windows, MacOS, and on [our Github Pages](https://marcuslim835.github.io/co-opeDown-WebGL/)
 
-**Project Resources** <br>
+![image](https://user-images.githubusercontent.com/77620616/126726232-fefac8a1-9953-478c-a6a7-2ed8cf8dfa80.png)
+
 1. [Quick Start Guide](https://github.com/marcuslim835/co-opeDown#1-quick-start-guide "Get Gaming Now!")
 2. [Motivation](https://github.com/marcuslim835/co-opeDown#2-motivation "Just DO IT!")
 3. [Aim](https://github.com/marcuslim835/co-opeDown#3-aim "Marksmanship over 9000")
@@ -14,7 +16,7 @@ Available on Windows, MacOS, and on [our Github Pages](https://marcuslim835.gith
 7. [Responses on Milestone Evaluation Feedback](https://github.com/marcuslim835/co-opeDown#7-responses-on-milestone-feedback "Arigatou Gozaimasu!")
 8. [Credits](https://github.com/marcuslim835/co-opeDown#8-credits "Many Thanks!")
 
-**Other Project Resources (redirects to another document)** <br>
+**Project Resources (redirects to another document)** <br>
 - [Project Poster](https://drive.google.com/file/d/1jx97fc7IDTosgmvtMr1OwiCqHEbdTbzZ/view?usp=sharing "Artistic Talent overflowing")
 
 - [Project Video](https://drive.google.com/file/d/1sG1sSsElKX2x5TalWBKIrSE_wuQUK0Ur/view?usp=sharing "More hype than CP2077!")
@@ -68,6 +70,8 @@ We hope to make a co-op game suitable for most ages to play when they feel bored
 | Milestone 1 | Milestone 2 | Milestone 3
 | ------------ | ------------- | -------------
 | :heavy_check_mark: Handcrafted Assets (artwork, etc) <br> :heavy_check_mark: Backgrounds <br> :heavy_check_mark: Character Sprites <br> :heavy_check_mark: Start Screen | :heavy_check_mark: Level Based Design <br> :heavy_check_mark: All Level Tilemaps + Tileset <br> :heavy_check_mark: End Screen + Credits <br> :heavy_check_mark: Scoring System <br> :heavy_check_mark: In-Game Music <br> :heavy_check_mark: Co-op <br> :heavy_check_mark: Infinite Replayability <br> :heavy_check_mark: One-handed Controls | :heavy_check_mark: Save/Load System <br> :heavy_check_mark: Different Game Difficulties <br> :heavy_check_mark: Endless Mode <br> :heavy_check_mark: Highscore <br> :heavy_check_mark: Stage Transitions (to indicate stage cleared, stage failed, etc) <br> :heavy_check_mark: Storyline Transitions (transition between levels)
+
+For more details, refer to our [Project Log](https://github.com/marcuslim835/co-opeDown#6-project-log) below.
 
 ### 5.2 Features
 Feature | Description
