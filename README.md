@@ -5,7 +5,7 @@ Artwork drawn with Procreate, Piskel, and Microsoft Paint <br>
 Video created using Lightworks <br>
 Available on Windows, MacOS, and on [our Github Pages](https://marcuslim835.github.io/co-opeDown-WebGL/)
 
-![image](https://user-images.githubusercontent.com/77620616/126726232-fefac8a1-9953-478c-a6a7-2ed8cf8dfa80.png)
+![image](![Title](https://user-images.githubusercontent.com/77206005/126878936-c1be2e66-4906-4299-a675-49086cf5efc7.jpeg))
 
 1. [Quick Start Guide](https://github.com/marcuslim835/co-opeDown#1-quick-start-guide "Get Gaming Now!")
 2. [Motivation](https://github.com/marcuslim835/co-opeDown#2-motivation "Just DO IT!")
