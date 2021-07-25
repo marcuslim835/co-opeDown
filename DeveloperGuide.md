@@ -550,7 +550,6 @@ The google forms we used for the 2 user testings can be found [here](https://for
 The raw data we received from the 2 user testings can be found [here](https://docs.google.com/spreadsheets/d/1DU9Yb75y01Bib81lDwYPVYg4UOJwktlwICyeo_Cn0nI/edit?usp=sharing). <br>
 
 We have conducted two rounds of user testing.
-These were the feedback we obtained yada yada (short ans qns)(5 response)
 
 Here are the findings and improvements we have obtained and made from User Testing 1
 Findings | Improvements
@@ -560,8 +559,11 @@ q2 vaguey! | Rephrased instructions for X-2 stages
 
 We decided to reuse the survey used for User Testing 1 in User Testing 2 as we believe the changes we made to that game were non-core gameplay features and hence will not skew the results of the questions about our core gameplay. Under this assumption, we have combined the results for User Testing 1 and 2 for the following questions.
 
-all dem rating qns ahahaha (10 response)
-Forms response chart. Question title: [Game Characteristics] Do you agree/disagree that the game.... Number of responses: .
+<img width="989" alt="Screenshot 2021-07-25 at 11 16 00 PM" src="https://user-images.githubusercontent.com/77206005/126904275-9f79e9e2-c96a-4b5e-b36d-617daee0dcfe.png">
+As we wanted the game to be family friendly yet finding a way to keep different generations in a family setting engaged, we asked this question to gather data if our game has a shot in entertaining the family. <br>
+<img width="981" alt="Screenshot 2021-07-25 at 11 16 32 PM" src="https://user-images.githubusercontent.com/77206005/126904281-7d3c9fb0-2dfb-4ae0-8ad8-11f89d6c80cb.png">
+<img width="997" alt="Screenshot 2021-07-25 at 11 18 23 PM" src="https://user-images.githubusercontent.com/77206005/126904283-d14925b4-27ee-4026-a120-238114b55d00.png">
+
 
 At the same time, these were the feedback we obtained yadayada (short ans qns)(5 response)
 
