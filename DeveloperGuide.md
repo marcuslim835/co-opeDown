@@ -87,15 +87,15 @@ Hard | Number generated is multiplied to the current sum.
 
 Difficulty for Stage 5 | Timer duration
 ------------ | -------------
-Easy | Timer countdowns from 15s.
-Normal | Timer countdowns from 10s.
-Hard | Timer countdowns from 5s.
+Easy | 15s
+Normal | 10s
+Hard | 5s
 
-Difficulty for Stage F | Enemy's health expectancy
+Difficulty for Stage F | Number of Hits to Vaccinate
 ------------ | -------------
-Easy | Enemy's health set at 50HP.
-Normal | Enemy's health set at 100HP.
-Hard | Enemy's health set at 150HP.
+Easy | 1
+Normal | 2
+Hard | 3
 
 ### 1.5 Level Mechanics
 As the level increases, questions will progressively get harder. <br>
@@ -202,14 +202,10 @@ PlayerCollision | Script for collision detection in 3.1 and 3.2. Value of `isCor
 Weapon | Script used to eliminate enemies (bats) and trigger buttons when the weapon is triggered by the player towards the direction it is facing. 
 
 ### 2.4 Transitions
-Objects | Description
------------- | -------------
-LevelLoader | Script to give each scene ability to play a suitable transition, depending on the success of each scene. There are 2 main transitions, Pass and Fail. When the players succeed to clear the scene, a Pass transition is generated, else a Fail transition is generated.
+Transitions are handled by a LevelLoader script that gives each scene the ability to play a suitable transition, depending on the success of each scene. There are 2 main transitions, Pass and Fail. When the players succeed to clear the scene, a Pass transition is generated, else a Fail transition is generated.
 
 ### 2.5 Tutorial
-Objects | Description
------------- | -------------
-tutorial | Script used to demostrate how to move, shoot and clear stages by giving the player a visual aid on what they are controlling. The Tutorial scene have clear instructions to the players so that they can master each control in a stage like setting, getting them familiarised with the game. Each key inputted into the keyboard that correspond to a specific action can be visually seen on the game.
+A tutorial can be accessed from game setup, where it demostrates to the user how to move, shoot and clear stages by giving the player a visual aid on what they are controlling. The tutorial scene have clear instructions to the players so that they can master each control in a stage like setting, getting them familiarised with the game. Each key inputted into the keyboard that correspond to a specific action can be visually seen on the game.
 
 ## 3 Game Modes
 All game mode stages have a timer on them. Players should clear the stage before the timer expires to be able to get the score associated with clearing the stage.
@@ -549,7 +545,10 @@ H2-10: Help and documentation
 ### 5.5 User Testing
 The google forms we used for the 2 user testings can be found [here](https://forms.gle/RzeXT5eFbzq1Lofa9). <br>
 The raw data we received from the 2 user testings can be found [here](https://docs.google.com/spreadsheets/d/1DU9Yb75y01Bib81lDwYPVYg4UOJwktlwICyeo_Cn0nI/edit?usp=sharing). <br>
+
+We have conducted two rounds of user testing.
 yadayada
+herehere jljl
 
 ## 6 Software Engineering
 
@@ -560,6 +559,8 @@ Since then, we have agreed on several things before we publish code on Unity Col
 
 ### 6.2 Project Management
 To totally eliminate the risk of publishing errors that may arise from bugs in Unity Collaborate, we have assigned WIPWIP
+
+herehere jljl
 
 ### 6.3 Mistakes to Avoid
 In light of some of our easily avoidable missteps, we find that it would be beneficial to future teams for us to list out some mistakes that are avoidable but have been made by us. <br>
