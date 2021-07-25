@@ -39,7 +39,10 @@
 The developer guide is meant to provide detailed information and explaination into how the game co-opeDown works. For a brief guide, proceed to the [User Guide](https://github.com/marcuslim835/co-opeDown/blob/main/UserGuide.md#user-guide "For Everyone").
 
 ### 1.1 Setting up the Game
-Refer to the [quick start guide](https://github.com/marcuslim835/co-opeDown/blob/main/README.md#1-quick-start-guide).
+Refer to the [quick start guide](https://github.com/marcuslim835/co-opeDown/blob/main/README.md#1-quick-start-guide) to play the game. <br>
+For developers interested in developing the game further, the raw code from GitHub can be pulled using <br>
+`git clone https://github.com/marcuslim835/co-opeDown` <br>
+Unity version 2020.3.7f1 and above is needed to run the files. If the game is to be exported in WebGL, the WebGL module has to be downloaded using Unity Hub. For more information on the WebGL module, visit [Unity's WebGL Documentation](https://docs.unity3d.com/Manual/webgl-gettingstarted.html).
 
 ### 1.2 Player Controls
 Player 1 Controls: WAD for movement, S to shoot <br>
@@ -547,7 +550,20 @@ The google forms we used for the 2 user testings can be found [here](https://for
 The raw data we received from the 2 user testings can be found [here](https://docs.google.com/spreadsheets/d/1DU9Yb75y01Bib81lDwYPVYg4UOJwktlwICyeo_Cn0nI/edit?usp=sharing). <br>
 
 We have conducted two rounds of user testing.
-yadayada
+These were the feedback we obtained yada yada (short ans qns)(5 response)
+
+Here are the findings and improvements we have obtained and made from User Testing 1
+Findings | Improvements
+-------- | ------------
+someone said need toot | tut!
+q2 vaguey! | Rephrased instructions for X-2 stages
+
+We decided to reuse the survey used for User Testing 1 in User Testing 2 as we believe the changes we made to that game were non-core gameplay features and hence will not skew the results of the questions about our core gameplay. Under this assumption, we have combined the results for User Testing 1 and 2 for the following questions.
+
+all dem rating qns ahahaha (10 response)
+
+At the same time, these were the feedback we obtained yadayada (short ans qns)(5 response)
+
 herehere jljl
 
 ## 6 Software Engineering
