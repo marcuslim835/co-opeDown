@@ -563,13 +563,17 @@ We decided to reuse the survey used for User Testing 1 in User Testing 2 as we b
 As we wanted the game to be family friendly yet finding a way to keep different generations in a family setting engaged, we asked this question to gather data if our game has a shot in entertaining the family. <br>
 
 <img width="997" alt="Screenshot 2021-07-25 at 11 18 23 PM" src="https://user-images.githubusercontent.com/77206005/126904283-d14925b4-27ee-4026-a120-238114b55d00.png">
-We want to know how easily a new consumer will understand the game. As a creator, we may leave out important steps or utilities in the game that users will not understand the function of. From this question, we knew that we have to make our instructions clearer for each new stage in the game. Data collected let us to be able to see the difficulties others faced when interacting with the game.
+We want to know how easily a new consumer will understand the game. As a creator, we may leave out important steps or utilities in the game that users will not understand the function of. From this question, we knew that we have to make our instructions clearer for each new stage in the game. Data collected let us to be able to see the difficulties others faced when interacting with the game. <br>
 
 At the same time, these were the feedback we obtained by the users:
 
 <img width="978" alt="Screenshot 2021-07-25 at 11 26 04 PM" src="https://user-images.githubusercontent.com/77206005/126904466-a50eb281-ed3e-43a7-82a5-c9df33a01761.png">
 <img width="720" alt="Screenshot 2021-07-25 at 11 27 51 PM" src="https://user-images.githubusercontent.com/77206005/126904508-3584e93a-6cf8-41da-8986-ae5b6b167763.png">
 <img width="714" alt="Screenshot 2021-07-25 at 11 28 01 PM" src="https://user-images.githubusercontent.com/77206005/126904511-f42fd57c-521c-46b1-a28d-de396322dcea.png">
+
+By collecting these feedback, we know what we had to further focus on and not spend our time on good enough features.The tutorial mode was the very first action we took after reading the feedbacks. Hence, after we rectified this problem, we can see that the game akes more sense to a new player who is unfamilar with our game. <br>
+
+
 
 
 ## 6 Software Engineering
