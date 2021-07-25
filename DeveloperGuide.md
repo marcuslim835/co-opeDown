@@ -561,6 +561,7 @@ q2 vaguey! | Rephrased instructions for X-2 stages
 We decided to reuse the survey used for User Testing 1 in User Testing 2 as we believe the changes we made to that game were non-core gameplay features and hence will not skew the results of the questions about our core gameplay. Under this assumption, we have combined the results for User Testing 1 and 2 for the following questions.
 
 all dem rating qns ahahaha (10 response)
+Forms response chart. Question title: [Game Characteristics] Do you agree/disagree that the game.... Number of responses: .
 
 At the same time, these were the feedback we obtained yadayada (short ans qns)(5 response)
 
