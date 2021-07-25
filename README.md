@@ -183,9 +183,9 @@ Music promoted by https://www.chosic.com/ <br>
 Attribution 4.0 International (CC BY 4.0) <br>
 https://creativecommons.org/licenses/by/4.0/
 
-Forest Walk by Alexander Nakarada | https://www.serpentsoundstudios.com
-Music promoted by https://www.chosic.com/
-Attribution 4.0 International (CC BY 4.0)
+Forest Walk by Alexander Nakarada | https://www.serpentsoundstudios.com <br>
+Music promoted by https://www.chosic.com/ <br>
+Attribution 4.0 International (CC BY 4.0) <br>
 https://creativecommons.org/licenses/by/4.0/
 
 Brazilian Street Fight by Punch Deck | https://soundcloud.com/punch-deck <br>
