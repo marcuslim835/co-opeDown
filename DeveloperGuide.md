@@ -574,9 +574,8 @@ Since then, we have agreed on several things before we publish code on Unity Col
 ![image](https://user-images.githubusercontent.com/77620616/125154294-e85c5100-e18b-11eb-84e7-4b8d8e6bae45.png)
 
 ### 6.2 Project Management
-To totally eliminate the risk of publishing errors that may arise from bugs in Unity Collaborate, we have assigned WIPWIP
-
-herehere jljl
+To totally eliminate the risk of publishing errors that may arise from bugs in Unity Collaborate, we have assigned work to be done by parts. We decided on splitting the work into smaller individual components so that there is little confusion on what is to be worked on. We also make sure to publish any changes and updates we made to the game frequently, so that there is a track record of the changes made. This helps significantly when the other teammate syncs the updated work into his computer. Furthermore, the other teammate knows what has been done. Thankfully, both of us work at different timings. There are no instances of simutaneous uploading of work from both ends at the same time. <br>
+We meet up quite frequently via discord chats, social messaging apps and in-person so that we discuss what have to be done next and the more important tasks we have to tackle first. We make sure to communicate the samll bugs we face when using unity so that these problems are made known, helping each other to avoid making similar mistakes when we are coding/ building the game. We cross check each other's new add-ons into unity and play through the entire game, checking through all aspects to a smooth functioning gameplay. 
 
 ### 6.3 Mistakes to Avoid
 In light of some of our easily avoidable missteps, we find that it would be beneficial to future teams for us to list out some mistakes that are avoidable but have been made by us. <br>
