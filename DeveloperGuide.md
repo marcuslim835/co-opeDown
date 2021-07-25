@@ -557,17 +557,20 @@ Findings | Improvements
 someone said need toot | tut!
 q2 vaguey! | Rephrased instructions for X-2 stages
 
-We decided to reuse the survey used for User Testing 1 in User Testing 2 as we believe the changes we made to that game were non-core gameplay features and hence will not skew the results of the questions about our core gameplay. Under this assumption, we have combined the results for User Testing 1 and 2 for the following questions.
+We decided to reuse the survey used for User Testing 1 in User Testing 2 as we believe the changes we made to that game were non-core gameplay features and hence will not skew the results of the questions about our core gameplay. Under this assumption, we have combined the results for User Testing 1 and 2 for the following questions:
 
 <img width="989" alt="Screenshot 2021-07-25 at 11 16 00 PM" src="https://user-images.githubusercontent.com/77206005/126904275-9f79e9e2-c96a-4b5e-b36d-617daee0dcfe.png">
 As we wanted the game to be family friendly yet finding a way to keep different generations in a family setting engaged, we asked this question to gather data if our game has a shot in entertaining the family. <br>
-<img width="981" alt="Screenshot 2021-07-25 at 11 16 32 PM" src="https://user-images.githubusercontent.com/77206005/126904281-7d3c9fb0-2dfb-4ae0-8ad8-11f89d6c80cb.png">
+
 <img width="997" alt="Screenshot 2021-07-25 at 11 18 23 PM" src="https://user-images.githubusercontent.com/77206005/126904283-d14925b4-27ee-4026-a120-238114b55d00.png">
+We want to know how easily a new consumer will understand the game. As a creator, we may leave out important steps or utilities in the game that users will not understand the function of. From this question, we knew that we have to make our instructions clearer for each new stage in the game. Data collected let us to be able to see the difficulties others faced when interacting with the game.
 
+At the same time, these were the feedback we obtained by the users:
 
-At the same time, these were the feedback we obtained yadayada (short ans qns)(5 response)
+<img width="978" alt="Screenshot 2021-07-25 at 11 26 04 PM" src="https://user-images.githubusercontent.com/77206005/126904466-a50eb281-ed3e-43a7-82a5-c9df33a01761.png">
+<img width="720" alt="Screenshot 2021-07-25 at 11 27 51 PM" src="https://user-images.githubusercontent.com/77206005/126904508-3584e93a-6cf8-41da-8986-ae5b6b167763.png">
+<img width="714" alt="Screenshot 2021-07-25 at 11 28 01 PM" src="https://user-images.githubusercontent.com/77206005/126904511-f42fd57c-521c-46b1-a28d-de396322dcea.png">
 
-herehere jljl
 
 ## 6 Software Engineering
 
