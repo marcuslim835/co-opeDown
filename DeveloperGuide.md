@@ -571,7 +571,7 @@ At the same time, these were the feedback we obtained by the users:
 <img width="720" alt="Screenshot 2021-07-25 at 11 27 51 PM" src="https://user-images.githubusercontent.com/77206005/126904508-3584e93a-6cf8-41da-8986-ae5b6b167763.png">
 <img width="714" alt="Screenshot 2021-07-25 at 11 28 01 PM" src="https://user-images.githubusercontent.com/77206005/126904511-f42fd57c-521c-46b1-a28d-de396322dcea.png">
 
-By collecting these feedback, we know what we had to further focus on and not spend our time on good enough features.The tutorial mode was the very first action we took after reading the feedbacks. Hence, after we rectified this problem, we can see that the game akes more sense to a new player who is unfamilar with our game. <br>
+By collecting these feedback, we know what we had to further focus on and not spend our time on good enough features.The tutorial mode was the very first action we took after reading the feedbacks. Hence, after we rectified this problem, we can see that the game makes more sense to a new player who is unfamilar with our game. <br>
 
 
 
