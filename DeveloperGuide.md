@@ -546,35 +546,29 @@ H2-10: Help and documentation
 1) User and Developer Guides are provided with the game download
 
 ### 5.5 User Testing
+We have conducted two rounds of user testing, with 5 pairs of users in User Testing 1 and another 5 pairs of users in User Testing 2. <br>
 The google forms we used for the 2 user testings can be found [here](https://forms.gle/RzeXT5eFbzq1Lofa9). <br>
 The raw data we received from the 2 user testings can be found [here](https://docs.google.com/spreadsheets/d/1DU9Yb75y01Bib81lDwYPVYg4UOJwktlwICyeo_Cn0nI/edit?usp=sharing). <br>
 
-We have conducted two rounds of user testing.
-
-Here are the findings and improvements we have obtained and made from User Testing 1
+Here are the key findings and improvements we have obtained and made from User Testing 1.
 Findings | Improvements
 -------- | ------------
-someone said need toot | tut!
-q2 vaguey! | Rephrased instructions for X-2 stages
+Button used for shooting is not communicated to the user in game | Tutorial Stage has been added
+Stage X-2 instructions could be unclear | Rephrased instructions for X-2 stages
 
 We decided to reuse the survey used for User Testing 1 in User Testing 2 as we believe the changes we made to that game were non-core gameplay features and hence will not skew the results of the questions about our core gameplay. Under this assumption, we have combined the results for User Testing 1 and 2 for the following questions:
 
-<img width="989" alt="Screenshot 2021-07-25 at 11 16 00 PM" src="https://user-images.githubusercontent.com/77206005/126904275-9f79e9e2-c96a-4b5e-b36d-617daee0dcfe.png">
+<img width="950" alt="Screenshot 2021-07-25 at 11 16 00 PM" src="https://user-images.githubusercontent.com/77206005/126904275-9f79e9e2-c96a-4b5e-b36d-617daee0dcfe.png">
 As we wanted the game to be family friendly yet finding a way to keep different generations in a family setting engaged, we asked this question to gather data if our game has a shot in entertaining the family. <br>
 
-<img width="997" alt="Screenshot 2021-07-25 at 11 18 23 PM" src="https://user-images.githubusercontent.com/77206005/126904283-d14925b4-27ee-4026-a120-238114b55d00.png">
+<img width="950" alt="Screenshot 2021-07-25 at 11 18 23 PM" src="https://user-images.githubusercontent.com/77206005/126904283-d14925b4-27ee-4026-a120-238114b55d00.png">
 We want to know how easily a new consumer will understand the game. As a creator, we may leave out important steps or utilities in the game that users will not understand the function of. From this question, we knew that we have to make our instructions clearer for each new stage in the game. Data collected let us to be able to see the difficulties others faced when interacting with the game. <br>
 
 At the same time, these were the feedback we obtained by the users:
+<img width="950" alt="Screenshot 2021-07-25 at 11 26 04 PM" src="https://user-images.githubusercontent.com/77206005/126904466-a50eb281-ed3e-43a7-82a5-c9df33a01761.png">
+<img width="950" alt="Screenie" src="https://user-images.githubusercontent.com/77620616/126917685-828eac53-c90d-46f4-a09b-71d011f75df6.png">
 
-<img width="978" alt="Screenshot 2021-07-25 at 11 26 04 PM" src="https://user-images.githubusercontent.com/77206005/126904466-a50eb281-ed3e-43a7-82a5-c9df33a01761.png">
-<img width="720" alt="Screenshot 2021-07-25 at 11 27 51 PM" src="https://user-images.githubusercontent.com/77206005/126904508-3584e93a-6cf8-41da-8986-ae5b6b167763.png">
-<img width="714" alt="Screenshot 2021-07-25 at 11 28 01 PM" src="https://user-images.githubusercontent.com/77206005/126904511-f42fd57c-521c-46b1-a28d-de396322dcea.png">
-
-By collecting these feedback, we know what we had to further focus on and not spend our time on good enough features.The tutorial mode was the very first action we took after reading the feedbacks. Hence, after we rectified this problem, we can see that the game makes more sense to a new player who is unfamilar with our game. <br>
-
-
-
+By collecting these feedback, we know what we had to further focus on and not spend our time on good enough features. The tutorial mode was the very first action we took after reading the feedbacks. Hence, after we rectified this problem, we can see that the game makes more sense to a new player who is unfamilar with our game. <br>
 
 ## 6 Software Engineering
 
@@ -584,8 +578,8 @@ Since then, we have agreed on several things before we publish code on Unity Col
 ![image](https://user-images.githubusercontent.com/77620616/125154294-e85c5100-e18b-11eb-84e7-4b8d8e6bae45.png)
 
 ### 6.2 Project Management
-To totally eliminate the risk of publishing errors that may arise from bugs in Unity Collaborate, we have assigned work to be done by parts. We decided on splitting the work into smaller individual components so that there is little confusion on what is to be worked on. We also make sure to publish any changes and updates we made to the game frequently, so that there is a track record of the changes made. This helps significantly when the other teammate syncs the updated work into his computer. Furthermore, the other teammate knows what has been done. Thankfully, both of us work at different timings. There are no instances of simutaneous uploading of work from both ends at the same time. We have thus far not experienced publishing errors that hinders our flow of work accordinf to out schedules.<br>
-We meet up quite frequently via discord chats, social messaging apps and in-person so that we discuss what have to be done next and the more important tasks we have to tackle first. Whenever we face difficulties in building on unity, we research what should be done. Online tutorials and Q&As are helpful to answer our queries. We make sure to communicate the samll bugs we face when using unity so that these problems are made known, helping each other to avoid making similar mistakes when we are coding/ building the game. We cross check each other's new add-ons into unity and play through the entire game, checking through all aspects to a smooth functioning gameplay. The projet log and shared time table we came up with keep us on the go so that we do not slack off when there is work to be done. As this is a group work, knowing one member's performance will affect the other, we tried to keep on task and responsible for our work.
+To totally eliminate the risk of publishing errors that may arise from bugs in Unity Collaborate, we have assigned work to be done by parts. We decided on splitting the work into smaller individual components so that there is little confusion on what is to be worked on. We also make sure to publish any changes and updates we made to the game frequently, so that there is a track record of the changes made and the other knows what has been done. This helps significantly when the other teammate syncs the updated work into his computer. As both of us work at different times through the day and night, we have thus far not experienced publishing errors that hinders our flow of work according to our schedules. <br>
+We meet up quite frequently via discord chats, social messaging apps and (when the situation permits) in-person so that we can discuss what have to be done next and prioritize the more important tasks we have to tackle first. Whenever we face difficulties in building on Unity, we consult each other and also research what should be done. The availability and readiness of online tutorials and Q&As are helpful to answer our queries. We make sure to communicate the samll bugs we face when using Unity so that these problems are made known, helping each other to avoid making similar mistakes when we are coding/building the game. We cross check each other's new add-ons into unity and play through the entire game, checking through all aspects to a smooth functioning gameplay. The projet log and shared timetable we came up with keep us on time and on target so that we do not slack off when there is work to be done. As this is a group work, knowing one member's performance will affect the other, we tried to keep on task and responsible for our work.
 
 ### 6.3 Mistakes to Avoid
 In light of some of our easily avoidable missteps, we find that it would be beneficial to future teams for us to list out some mistakes that are avoidable but have been made by us. <br>
