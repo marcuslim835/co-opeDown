@@ -19,7 +19,7 @@ Available on Windows, MacOS, and on [our Github Pages](https://marcuslim835.gith
 **Project Resources (redirects to another document)** <br>
 - [Project Poster](https://drive.google.com/file/d/1jx97fc7IDTosgmvtMr1OwiCqHEbdTbzZ/view?usp=sharing "Artistic Talent overflowing")
 
-- [Project Video](https://drive.google.com/file/d/1sG1sSsElKX2x5TalWBKIrSE_wuQUK0Ur/view?usp=sharing "More hype than CP2077!")
+- [Project Video](https://drive.google.com/file/d/1RawB7Cpk_WxKKx0iPcGYyvcI_TlnNvyv/view?usp=sharing "More hype than CP2077!")
 
 - [User Guide and FAQs](https://github.com/marcuslim835/co-opeDown/blob/main/UserGuide.md#user-guide "For users")
 
