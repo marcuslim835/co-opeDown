@@ -17,7 +17,7 @@ Available on Windows, MacOS, and on [our Github Pages](https://marcuslim835.gith
 8. [Credits](https://github.com/marcuslim835/co-opeDown#8-credits "Many Thanks!")
 
 **Project Resources (redirects to another document)** <br>
-- [Project Poster](https://drive.google.com/file/d/1jx97fc7IDTosgmvtMr1OwiCqHEbdTbzZ/view?usp=sharing "Artistic Talent overflowing")
+- [Project Poster](https://drive.google.com/file/d/10Nxb1kLkn0u8mn5kC8QjStO62034Gb6R/view?usp=sharing "Artistic Talent overflowing")
 
 - [Project Video](https://drive.google.com/file/d/1RawB7Cpk_WxKKx0iPcGYyvcI_TlnNvyv/view?usp=sharing "More hype than CP2077!")
 
