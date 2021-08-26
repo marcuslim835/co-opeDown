@@ -1,5 +1,6 @@
 # co-opeDown
-Orbital 2021 **Apollo 11** Project <br>
+Orbital 2021 **Apollo 11** (Advanced) Project <br>
+Details about NUS Orbital could be found [here](https://orbital.comp.nus.edu.sg/). <br>
 Developed using Unity 2020.3.7f1 <br>
 Artwork drawn with Procreate, Piskel, and Microsoft Paint <br>
 Video created using Lightworks <br>
@@ -7,6 +8,16 @@ Available on Windows, MacOS, and on [our Github Pages](https://marcuslim835.gith
 
 ![image](https://user-images.githubusercontent.com/77206005/126878936-c1be2e66-4906-4299-a675-49086cf5efc7.jpeg)
 
+**Project Resources (redirects to another document)** <br>
+- [Project Poster](https://drive.google.com/file/d/1Ezgf860M934d0qXQuFEc4-N9_pNbJFIu/view?usp=sharing "Artistic Talent overflowing")
+
+- [Project Video](https://youtu.be/nctY_jwEf-A "More hype than CP2077!")
+
+- [User Guide and FAQs](https://github.com/marcuslim835/co-opeDown/blob/main/UserGuide.md#user-guide "For users")
+
+- [Developer Guide, Design Considerations, Testing, and Software Engineering](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#developer-guide "For developers who are interested in our implementation")
+
+## Contents
 1. [Quick Start Guide](https://github.com/marcuslim835/co-opeDown#1-quick-start-guide "Get Gaming Now!")
 2. [Motivation](https://github.com/marcuslim835/co-opeDown#2-motivation "Just DO IT!")
 3. [Aim](https://github.com/marcuslim835/co-opeDown#3-aim "Marksmanship over 9000")
@@ -15,15 +26,6 @@ Available on Windows, MacOS, and on [our Github Pages](https://marcuslim835.gith
 6. [Project Log](https://github.com/marcuslim835/co-opeDown#6-project-log "Time well spent")
 7. [Responses on Milestone Evaluation Feedback](https://github.com/marcuslim835/co-opeDown#7-responses-on-milestone-feedback "Arigatou Gozaimasu!")
 8. [Credits](https://github.com/marcuslim835/co-opeDown#8-credits "Many Thanks!")
-
-**Project Resources (redirects to another document)** <br>
-- [Project Poster](https://drive.google.com/file/d/10Nxb1kLkn0u8mn5kC8QjStO62034Gb6R/view?usp=sharing "Artistic Talent overflowing")
-
-- [Project Video](https://drive.google.com/file/d/1RawB7Cpk_WxKKx0iPcGYyvcI_TlnNvyv/view?usp=sharing "More hype than CP2077!")
-
-- [User Guide and FAQs](https://github.com/marcuslim835/co-opeDown/blob/main/UserGuide.md#user-guide "For users")
-
-- [Developer Guide, Design Considerations, Testing, and Software Engineering](https://github.com/marcuslim835/co-opeDown/blob/main/DeveloperGuide.md#developer-guide "For developers who are interested in our implementation")
 
 ## 1 Quick Start Guide
 For Windows Users: 
@@ -36,7 +38,7 @@ For Mac Users:
 2) After download, extract the files from the zip folder and run co-opeDown. <br>
 3) There may be a warning preventing the app from launching. Use spotlight to open (security & privacy). Under "General", press OPEN ANYWAY for "'co-opeDown' was blocked from use because it is not from an identified developer" and run co-opeDown. <br>
 
-Alternatively, you can play the game in your browser by [clicking here](https://marcuslim835.github.io/co-opeDown-WebGL/)
+Alternatively, you can play the game in your browser by [clicking here](https://marcuslim835.github.io/co-opeDown-WebGL/) (only works on browsers running on 4K resolution).
 
 ## 2 Motivation
 
